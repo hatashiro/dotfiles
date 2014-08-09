@@ -1,0 +1,5 @@
+" Set font size
+set guifont=Menlo\ Regular:h14
+
+" Theme
+color solarized
