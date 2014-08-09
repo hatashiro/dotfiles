@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-# Clean
-git clean -dfx
-
-if [ ! -d "$PWD/.old" ]; then
-  mkdir .old
+if [ ! -d "$PWD/old" ]; then
+  mkdir old
+else
+  mv old older
+  mkdir old
+  mv older old/
 fi
 
 for f in `find . -name ".*" -type f`
@@ -12,7 +13,7 @@ do
   filename=$(basename $f)
   path=$PWD/$filename
   if [ -f "$HOME/$filename" ]; then
-    mv $HOME/$filename ./.old/
+    mv $HOME/$filename ./old/
   fi
 
   ln -s $path ~/
