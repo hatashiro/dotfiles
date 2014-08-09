@@ -1,0 +1,31 @@
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
+
+" Common typo
+command WQ wq
+command Wq wq
+command Q q
+
+" CtrlP
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
+" NERDTree
+nmap <silent><unique> <Leader>. :NERDTree %<CR>
+
+" Multiple Indent
+vmap >> >><ESC>gv
+vmap << <<<ESC>gv
+
+" Copy to & Paste from clipboard for Mac
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
+nmap <C-V> :r !pbpaste<CR>
+
+" Clear search
+command C let @/ = ""
+
+" Override search highlight color
+hi Search cterm=NONE ctermfg=black ctermbg=yellow

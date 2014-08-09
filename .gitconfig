@@ -1,0 +1,18 @@
+[color]
+	ui = true
+	diff = true
+[user]
+	email = me@noraesae.net
+	name = Hyeonje Alex Jun
+[alias]
+  lg = log --decorate=short
+  co = checkout
+  br = branch
+  cm = commit
+  pick = cherry-pick
+  g = grep --line-number
+[core]
+	editor = /usr/bin/vim
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
