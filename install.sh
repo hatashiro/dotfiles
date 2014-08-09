@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+# Clean
+git clean -dfx
+
 if [ ! -d "$PWD/.old" ]; then
   mkdir .old
 fi
