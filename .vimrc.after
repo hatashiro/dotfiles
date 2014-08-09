@@ -13,7 +13,7 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 " NERDTree
-nmap <silent><unique> <Leader>. :NERDTree %<CR>
+nmap <silent><unique> <Leader>. :NERDTreeToggle %<CR>
 
 " Multiple Indent
 vmap >> >><ESC>gv
