@@ -29,3 +29,6 @@ command C let @/ = ""
 
 " Override search highlight color
 hi Search cterm=NONE ctermfg=black ctermbg=yellow
+
+" Disable Syntastic
+silent SyntasticToggleMode
