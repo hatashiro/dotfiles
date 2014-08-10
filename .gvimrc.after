@@ -3,3 +3,13 @@ set guifont=Menlo\ Regular:h14
 
 " Theme
 color solarized
+
+" Disable some useless functions.
+" * Left Click
+nnoremap <LeftMouse> <Nop>
+inoremap <LeftMouse> <Nop>
+" * Shift-Arrow actions
+noremap <S-Up> <Up>
+noremap <S-Down> <Down>
+noremap <S-Left> <Left>
+noremap <S-Right> <Right>
