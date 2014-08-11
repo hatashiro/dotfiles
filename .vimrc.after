@@ -32,3 +32,12 @@ hi Search cterm=NONE ctermfg=black ctermbg=yellow
 
 " Disable Syntastic
 silent SyntasticToggleMode
+
+" Set ts
+function! SetIndent(size)
+  let &ts=a:size
+  let &sw=a:size
+  let &sts=a:size
+endfunction
+call SetIndent(2)
+command! -nargs=1 Ts call SetIndent(<f-args>)
