@@ -11,11 +11,12 @@ fi
 
 # List of files to ignore
 ignore="
+.git
 .gitignore
 "
 
 # Link dotfiles
-for f in `find . -name ".*" -type f`
+for f in `find . -name ".*" -maxdepth 1`
 do
   filename=$(basename $f)
   path=$PWD/$filename
