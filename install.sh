@@ -9,23 +9,13 @@ else
   mv older old/
 fi
 
-# List of files to ignore
-ignore="
-.git
-.gitignore
-"
-
 # Link dotfiles
-for f in `find . -name ".*" -maxdepth 1`
+for f in `find sources -name ".*" -maxdepth 1`
 do
   filename=$(basename $f)
-  path=$PWD/$filename
+  path=$PWD/$f
 
-  if [ -f "$HOME/$filename" ]; then
-    mv $HOME/$filename ./old/
-  fi
+  mv $HOME/$filename ./old/
 
-  if [[ ! " $ignore " =~ $filename ]]; then
-    ln -s $path ~/
-  fi
+  ln -s $path ~/
 done
