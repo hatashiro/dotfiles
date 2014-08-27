@@ -88,6 +88,9 @@ export PATH=$PATH:$SCALA_HOME/bin:$PLAY_HOME:$ACTIVATOR_HOME
 export PERSONAL_SCRIPT_PATH=/Users/noraesae/Works/scripts
 export PATH=$PATH:$PERSONAL_SCRIPT_PATH
 
+# Java Home
+export JAVA_HOME=`/usr/libexec/java_home`
+
 # Java
 jv() {
   local java_home=`/usr/libexec/java_home -v 1.$1`
