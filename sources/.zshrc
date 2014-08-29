@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/Users/noraesae/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/MacGPG2/bin"
+export PATH="/usr/local/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/MacGPG2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -78,13 +78,13 @@ export PATH=/usr/local/bin:~/bin:$PATH
 function git(){hub $@}
 
 # Scala and etc
-export SCALA_HOME=/Users/noraesae/Works/etc/scala
-export ACTIVATOR_HOME="/Users/noraesae/Works/etc/activator-1.2.10"
-export JAVA_TOOL_OPTIONS='-Dfile.encoding=UTF8 -Djava.library.path=/Users/noraesae/Works/etc/java.library.path'
+export SCALA_HOME=$HOME/Works/etc/scala
+export ACTIVATOR_HOME=$HOME/Works/etc/activator-1.2.10
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/etc/java.library.path"
 export PATH=$PATH:$SCALA_HOME/bin:$ACTIVATOR_HOME
 
 # Personal scripts
-export PERSONAL_SCRIPT_PATH=/Users/noraesae/Works/scripts
+export PERSONAL_SCRIPT_PATH=$HOME/.dotfiles/scripts
 export PATH=$PATH:$PERSONAL_SCRIPT_PATH
 
 # Java Home
