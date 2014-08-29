@@ -79,10 +79,9 @@ function git(){hub $@}
 
 # Scala and etc
 export SCALA_HOME=/Users/noraesae/Works/etc/scala
-export PLAY_HOME="/Users/noraesae/Works/etc/play-2.2.4"
 export ACTIVATOR_HOME="/Users/noraesae/Works/etc/activator-1.2.10"
 export JAVA_TOOL_OPTIONS='-Dfile.encoding=UTF8 -Djava.library.path=/Users/noraesae/Works/etc/java.library.path'
-export PATH=$PATH:$SCALA_HOME/bin:$PLAY_HOME:$ACTIVATOR_HOME
+export PATH=$PATH:$SCALA_HOME/bin:$ACTIVATOR_HOME
 
 # Personal scripts
 export PERSONAL_SCRIPT_PATH=/Users/noraesae/Works/scripts
