@@ -13,3 +13,7 @@ noremap <S-Up> <Up>
 noremap <S-Down> <Down>
 noremap <S-Left> <Left>
 noremap <S-Right> <Right>
+inoremap <S-Up> <Up>
+inoremap <S-Down> <Down>
+inoremap <S-Left> <Left>
+inoremap <S-Right> <Right>
