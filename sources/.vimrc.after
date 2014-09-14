@@ -26,7 +26,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 nmap <C-V> :r !pbpaste<CR>
 
 " Clear search
-command C let @/ = ""
+command S let @/ = ""
 
 " Override search highlight color
 hi Search cterm=NONE ctermfg=black ctermbg=yellow
