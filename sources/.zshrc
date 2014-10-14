@@ -95,3 +95,5 @@ jv() {
   local java_home=`/usr/libexec/java_home -v 1.$1`
   export JAVA_HOME=$java_home
 }
+
+alias node6="node --harmony"
