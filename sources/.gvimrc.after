@@ -2,7 +2,8 @@
 set guifont=Menlo\ Regular:h14
 
 " Theme
-color solarized
+color molokai
+let g:molokai_original=1
 
 " Disable some useless functions.
 " * Left Click
@@ -17,3 +18,10 @@ inoremap <S-Up> <Up>
 inoremap <S-Down> <Down>
 inoremap <S-Left> <Left>
 inoremap <S-Right> <Right>
+
+" Set cursorline and color column
+set cursorline
+set colorcolumn=80
+set hlsearch
+hi ColorColumn guibg=#252525
+hi Search guibg=#66D9EF guifg=Black
