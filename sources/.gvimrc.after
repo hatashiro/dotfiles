@@ -23,5 +23,6 @@ inoremap <S-Right> <Right>
 set cursorline
 set colorcolumn=80
 set hlsearch
+hi CursorLine guibg=#252525
 hi ColorColumn guibg=#252525
 hi Search guibg=#66D9EF guifg=Black
