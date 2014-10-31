@@ -1,5 +1,5 @@
 " Set font size
-set guifont=Menlo\ Regular:h14
+set guifont=Source\ Code\ Pro:h14
 
 " Theme
 color molokai
