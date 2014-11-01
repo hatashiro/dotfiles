@@ -25,4 +25,4 @@ set colorcolumn=80
 set hlsearch
 hi CursorLine guibg=#252525
 hi ColorColumn guibg=#252525
-hi Search guibg=#66D9EF guifg=Black
+hi Search guibg=#f92672 guifg=#f8f8f2
