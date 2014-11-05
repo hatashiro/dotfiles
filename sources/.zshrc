@@ -101,3 +101,6 @@ alias node6="node --harmony"
 # Go
 export GOPATH=$HOME/Works/etc/go
 export PATH=$PATH:$GOPATH/bin
+
+# added by travis gem
+[ -f /Users/noraesae/.travis/travis.sh ] && source /Users/noraesae/.travis/travis.sh
