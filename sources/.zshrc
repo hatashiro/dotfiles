@@ -99,6 +99,7 @@ jv() {
 alias node6="node --harmony"
 
 # Go
+export PATH=$PATH:$HOME/Works/etc/go/go/bin
 export GOPATH=$HOME/Works/etc/go
 export PATH=$PATH:$GOPATH/bin
 
