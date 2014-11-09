@@ -78,9 +78,9 @@ export PATH=/usr/local/bin:~/bin:$PATH
 function git(){hub $@}
 
 # Scala and etc
-export SCALA_HOME=$HOME/Works/etc/scala
-export ACTIVATOR_HOME=$HOME/Works/etc/activator-1.2.10
-export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/etc/java.library.path"
+export SCALA_HOME=$HOME/Works/env/scala
+export ACTIVATOR_HOME=$HOME/Works/env/activator-1.2.10
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/env/java.library.path"
 export PATH=$PATH:$SCALA_HOME/bin:$ACTIVATOR_HOME
 
 # Personal scripts
@@ -99,8 +99,8 @@ jv() {
 alias node6="node --harmony"
 
 # Go
-export PATH=$PATH:$HOME/Works/etc/go/go/bin
-export GOPATH=$HOME/Works/etc/go
+export PATH=$PATH:$HOME/Works/env/go/go/bin
+export GOPATH=$HOME/Works/env/go
 export PATH=$PATH:$GOPATH/bin
 
 # added by travis gem
