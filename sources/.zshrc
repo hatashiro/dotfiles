@@ -1,6 +1,3 @@
-# Run tmux unless there's one running.
-if [ "$TMUX" = "" ]; then tmux; fi
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -51,7 +48,12 @@ ZSH_THEME="sorin"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(github osx)
+
+# Plugin settings
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART_ONCE=true
+
+plugins=(github osx tmux)
 
 source $ZSH/oh-my-zsh.sh
 
