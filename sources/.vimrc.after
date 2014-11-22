@@ -46,6 +46,9 @@ set t_Co=256
 
 " Set cursorline and color column
 set colorcolumn=80
-hi ColorColumn ctermbg=8
+hi ColorColumn ctermbg=black
 set hlsearch
-hi Search ctermbg=11 ctermfg=8
+hi Search cterm=reverse ctermbg=black
+
+" Mouse setting
+set mouse=nicr
