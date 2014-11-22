@@ -28,9 +28,6 @@ nmap <C-V> :r !pbpaste<CR>
 " Clear search
 command S let @/ = ""
 
-" Override search highlight color
-hi Search cterm=NONE ctermfg=black ctermbg=yellow
-
 " Disable Syntastic
 silent SyntasticToggleMode
 
@@ -42,3 +39,13 @@ function! SetIndent(size)
 endfunction
 call SetIndent(2)
 command! -nargs=1 Ts call SetIndent(<f-args>)
+
+" Set 256 color
+set term=xterm-256color
+set t_Co=256
+
+" Set cursorline and color column
+set colorcolumn=80
+hi ColorColumn ctermbg=8
+set hlsearch
+hi Search ctermbg=11 ctermfg=8
