@@ -9,15 +9,6 @@ let g:molokai_original=1
 " * Left Click
 nnoremap <LeftMouse> <Nop>
 inoremap <LeftMouse> <Nop>
-" * Shift-Arrow actions
-noremap <S-Up> <Up>
-noremap <S-Down> <Down>
-noremap <S-Left> <Left>
-noremap <S-Right> <Right>
-inoremap <S-Up> <Up>
-inoremap <S-Down> <Down>
-inoremap <S-Left> <Left>
-inoremap <S-Right> <Right>
 
 " Set cursorline and color column
 set cursorline
