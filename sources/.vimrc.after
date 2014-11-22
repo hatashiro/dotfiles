@@ -45,9 +45,11 @@ set term=xterm-256color
 set t_Co=256
 
 " Set cursorline and color column
+set cursorline
 set colorcolumn=80
-hi ColorColumn ctermbg=black
 set hlsearch
+hi CursorLine cterm=NONE ctermbg=234
+hi ColorColumn ctermbg=234
 hi Search cterm=reverse ctermbg=black
 
 " Mouse setting
