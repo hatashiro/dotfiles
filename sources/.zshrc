@@ -96,7 +96,9 @@ jv() {
   export JAVA_HOME=$java_home
 }
 
+# Node
 alias node6="node --harmony"
+alias cs="coffee"
 
 # Go
 export PATH=$PATH:$HOME/Works/env/go/go/bin
