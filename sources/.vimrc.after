@@ -40,17 +40,18 @@ endfunction
 call SetIndent(2)
 command! -nargs=1 Ts call SetIndent(<f-args>)
 
-" Set 256 color
+" Sets
 set term=xterm-256color
 set t_Co=256
-
-" Set cursorline and color column
 set cursorline
 set colorcolumn=80
 set hlsearch
+
+" Highlights
 hi CursorLine cterm=NONE ctermbg=234
 hi ColorColumn ctermbg=234
 hi Search cterm=reverse ctermbg=black
+hi Pmenu ctermbg=238 gui=bold
 
 " Mouse setting
 set mouse=nicr
