@@ -102,7 +102,6 @@ jv() {
 }
 
 # Node
-alias node6="node --harmony"
 alias cs="coffee"
 
 # Go
@@ -112,3 +111,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # added by travis gem
 [ -f /Users/noraesae/.travis/travis.sh ] && source /Users/noraesae/.travis/travis.sh
+
+# iojs
+export PATH=$PATH:$HOME/Works/env/iojs/bin
+alias node="iojs"
