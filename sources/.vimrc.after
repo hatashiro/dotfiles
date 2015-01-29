@@ -52,6 +52,7 @@ hi CursorLine cterm=NONE ctermbg=234
 hi ColorColumn ctermbg=234
 hi Search cterm=reverse ctermbg=black
 hi Pmenu ctermbg=238 gui=bold
+hi Visual cterm=NONE ctermbg=238
 
 " Mouse setting
 set mouse=nicr
