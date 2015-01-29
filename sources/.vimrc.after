@@ -67,3 +67,7 @@ inoremap <S-Up> <Up>
 inoremap <S-Down> <Down>
 inoremap <S-Left> <Left>
 inoremap <S-Right> <Right>
+
+" NERDCommenter
+nmap <C-\> <Leader>c<Space>
+vmap <C-\> <Leader>c<Space>
