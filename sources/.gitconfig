@@ -1,9 +1,9 @@
 [color]
-	ui = true
-	diff = true
+  ui = true
+  diff = true
 [user]
-	email = me@noraesae.net
-	name = Hyunje Alex Jun
+  email = me@noraesae.net
+  name = Hyunje Alex Jun
 [alias]
   l = log --pretty=format:'%Cred%h %Cgreen%an %Creset%s' --name-status
   lg = log --decorate=short
@@ -14,7 +14,7 @@
   g = grep --line-number
   sh = show --pretty=format:'%Cred%h %Cgreen%an %Creset%s' --name-status
 [core]
-	editor = /usr/bin/vim
+  editor = /usr/bin/vim
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
