@@ -10,6 +10,9 @@ set incsearch                   " Incremental search.
 set ignorecase
 set smartcase
 set nobackup                    " Do not keep a backup file.
+set nowritebackup
+set swapfile                    " Swapfile directory.
+set dir=/tmp
 set noerrorbells                " No beeps.
 set nostartofline               " Do not jump to first character with page commands,
 set number                      " Show line number.
