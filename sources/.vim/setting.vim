@@ -25,6 +25,7 @@ set mouse=nicr
 colorscheme gruvbox
 set background=dark
 hi Comment cterm=None
+silent !~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh
 
 " xterm settings
 set term=xterm-256color
