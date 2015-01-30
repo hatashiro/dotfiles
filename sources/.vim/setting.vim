@@ -26,6 +26,9 @@ colorscheme gruvbox
 set background=dark
 hi Comment cterm=None
 silent !~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh
+hi TabLineSel ctermbg=235 ctermfg=white
+hi TabLine ctermbg=243 ctermfg=white
+hi TabLineFill ctermbg=243
 
 " xterm settings
 set term=xterm-256color
