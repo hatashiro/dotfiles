@@ -31,14 +31,3 @@ silent !~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh
 set term=xterm-256color
 set t_Co=256
 set t_ut=
-
-" Disable some useless functions.
-" * Shift-Arrow actions
-noremap <S-Up> <Up>
-noremap <S-Down> <Down>
-noremap <S-Left> <Left>
-noremap <S-Right> <Right>
-inoremap <S-Up> <Up>
-inoremap <S-Down> <Down>
-inoremap <S-Left> <Left>
-inoremap <S-Right> <Right>

@@ -20,3 +20,14 @@ vmap <C-\> <Leader>c<Space>
 
 " Tagbar
 nmap <Leader>, :TagbarToggle<CR>
+
+" Disable some useless functions.
+" * Shift-Arrow actions
+noremap <S-Up> <Up>
+noremap <S-Down> <Down>
+noremap <S-Left> <Left>
+noremap <S-Right> <Right>
+inoremap <S-Up> <Up>
+inoremap <S-Down> <Down>
+inoremap <S-Left> <Left>
+inoremap <S-Right> <Right>
