@@ -115,3 +115,6 @@ export PATH=$PATH:$GOPATH/bin
 # iojs
 export PATH=$PATH:$HOME/Works/env/iojs/bin
 alias node="iojs"
+
+# tmux
+alias tmux-reload="tmux source-file ~/.tmux.conf"
