@@ -7,6 +7,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'rking/ag.vim'
 
 " Syntaxes
 NeoBundle 'pangloss/vim-javascript'
