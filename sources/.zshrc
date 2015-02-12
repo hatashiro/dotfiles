@@ -118,3 +118,6 @@ alias node="iojs"
 
 # tmux
 alias tmux-reload="tmux source-file ~/.tmux.conf"
+
+# better sed
+alias sed="LC_CTYPE=C LANG=C sed -i ''"
