@@ -113,7 +113,6 @@ export PATH=$PATH:$GOPATH/bin
 [ -f /Users/noraesae/.travis/travis.sh ] && source /Users/noraesae/.travis/travis.sh
 
 # iojs
-export PATH=$PATH:$HOME/Works/env/iojs/bin
 alias node="iojs"
 
 # tmux
