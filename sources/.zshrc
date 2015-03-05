@@ -115,6 +115,3 @@ alias tmux-reload="tmux source-file ~/.tmux.conf"
 # nvm
 export NVM_DIR="/usr/local/var/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# better sed
-alias sed="LC_CTYPE=C LANG=C sed -i ''"
