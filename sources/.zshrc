@@ -101,9 +101,6 @@ jv() {
   export JAVA_HOME=$java_home
 }
 
-# Node
-alias cs="coffee"
-
 # Go
 export PATH=$PATH:$HOME/Works/env/go/go/bin
 export GOPATH=$HOME/Works/env/go
@@ -111,9 +108,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # added by travis gem
 [ -f /Users/noraesae/.travis/travis.sh ] && source /Users/noraesae/.travis/travis.sh
-
-# iojs
-alias node="iojs"
 
 # tmux
 alias tmux-reload="tmux source-file ~/.tmux.conf"
