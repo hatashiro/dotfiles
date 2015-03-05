@@ -12,3 +12,6 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 alias git=hub
+
+export NVM_DIR="/usr/local/var/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
