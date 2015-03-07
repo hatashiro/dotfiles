@@ -17,6 +17,7 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'tpope/vim-fireplace'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'vim-ruby/vim-ruby'
 
 " Color Scheme
 NeoBundle 'morhetz/gruvbox'
