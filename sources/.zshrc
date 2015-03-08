@@ -51,7 +51,7 @@ ZSH_THEME="sorin"
 
 # Plugin settings
 ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOSTART_ONCE=true
+ZSH_TMUX_AUTOCONNECT=false
 
 plugins=(github osx tmux)
 
