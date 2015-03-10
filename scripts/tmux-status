@@ -1,0 +1,53 @@
+#!/usr/bin/env python
+import re
+import subprocess
+
+def run_tmux_command(args):
+    p = subprocess.Popen(['tmux'] + args, stdout=subprocess.PIPE,
+                                          stderr=subprocess.PIPE)
+    out, err = p.communicate()
+    return out, err
+
+def get_detached_sessions():
+    out, err = run_tmux_command(['list-session'])
+    if err:
+        return []
+
+    raw_sessions = filter(lambda line: len(line) > 0, out.split("\n"))
+
+    def parse_raw_session(raw_session):
+        pattern = '(\d+): (\d+) windows \(created (.+)\)(.+)'
+        result = re.match(pattern, raw_session)
+        return {
+            "id": result.group(1),
+            "window_count": result.group(2),
+            "created_datetime": result.group(3),
+            "is_attached": '(attached)' in result.group(4),
+        }
+
+    sessions = map(parse_raw_session, raw_sessions)
+    return filter(lambda session: not session["is_attached"], sessions)
+
+def process_input(input_str):
+    command = input_str.strip()
+    action = command[:1]
+    arguments = map(lambda s: s.strip(), command[1:].split(','))
+    if action == 'k':
+        for arg in arguments:
+            run_tmux_command(['kill-session', '-t', arg])
+    elif action == 'a':
+        run_tmux_command(['attach-session', '-t', arguments[0]])
+
+def main():
+    detached_sessions = get_detached_sessions()
+    if len(detached_sessions) > 0:
+        print 'There are detached tmux sessions!'
+        for session in detached_sessions:
+            template = (" \033[92msession\033[0m \033[94m{id!s}\033[0m"
+                        " with \033[94m{window_count!s}\033[0m \033[92mwindows\033[0m"
+                        " created at {created_datetime!s}")
+            print template.format(**session)
+        process_input(raw_input('What to do (k to kill, a to attach): '))
+
+if __name__ == "__main__":
+    main()

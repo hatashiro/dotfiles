@@ -49,6 +49,15 @@ ZSH_THEME="sorin"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
+# Personal scripts
+export PERSONAL_SCRIPT_PATH=$HOME/.dotfiles/scripts
+export PATH=$PATH:$PERSONAL_SCRIPT_PATH
+
+# Check tmux status
+if [ -z $TMUX ]; then
+  tmux-status
+fi
+
 # Plugin settings
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOCONNECT=false
@@ -59,7 +68,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/MacGPG2/bin"
+export PATH="$PATH:/usr/local/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/MacGPG2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -87,10 +96,6 @@ export SCALA_HOME=$HOME/Works/env/scala
 export ACTIVATOR_HOME=$HOME/Works/env/activator-1.2.10
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/env/java.library.path"
 export PATH=$PATH:$SCALA_HOME/bin:$ACTIVATOR_HOME
-
-# Personal scripts
-export PERSONAL_SCRIPT_PATH=$HOME/.dotfiles/scripts
-export PATH=$PATH:$PERSONAL_SCRIPT_PATH
 
 # Java Home
 export JAVA_HOME=`/usr/libexec/java_home`
