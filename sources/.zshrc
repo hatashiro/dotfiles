@@ -111,6 +111,10 @@ export PATH=$PATH:$HOME/Works/env/go/go/bin
 export GOPATH=$HOME/Works/env/go
 export PATH=$PATH:$GOPATH/bin
 
+# pypy
+export PATH=$PATH:$HOME/Works/env/pypy3/bin
+alias pypy='pypy3.2'
+
 # added by travis gem
 [ -f /Users/noraesae/.travis/travis.sh ] && source /Users/noraesae/.travis/travis.sh
 
