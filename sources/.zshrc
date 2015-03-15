@@ -124,3 +124,7 @@ alias tmux-reload="tmux source-file ~/.tmux.conf"
 # nvm
 export NVM_DIR="/usr/local/var/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# F#
+export PATH=$PATH:$HOME/Works/env/fsharp/mono64/bin
+export PATH=$PATH:$HOME/Works/env/fsharp/nuget/bin

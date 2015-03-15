@@ -20,6 +20,7 @@ NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'raichoo/haskell-vim'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'kongo2002/fsharp-vim'
 
 " Color Scheme
 NeoBundle 'morhetz/gruvbox'
