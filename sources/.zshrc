@@ -128,3 +128,5 @@ export NVM_DIR="/usr/local/var/nvm"
 # F#
 export PATH=$PATH:$HOME/Works/env/fsharp/mono64/bin
 export PATH=$PATH:$HOME/Works/env/fsharp/nuget/bin
+alias fsc=fsharpc
+alias fsi=fsharpi
