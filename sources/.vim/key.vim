@@ -26,3 +26,10 @@ inoremap <S-Up> <Up>
 inoremap <S-Down> <Down>
 inoremap <S-Left> <Left>
 inoremap <S-Right> <Right>
+
+" Remap D into deletion without yanking.
+" Deletion without yanking is mapped to d.
+nnoremap D d
+nnoremap d "_d
+vnoremap D d
+vnoremap d "_d
