@@ -34,3 +34,6 @@ hi TabLineFill ctermbg=243
 set term=xterm-256color
 set t_Co=256
 set t_ut=
+
+" Clipboard
+set clipboard=unnamed
