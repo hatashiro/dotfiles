@@ -23,4 +23,4 @@ NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'kongo2002/fsharp-vim'
 
 " Color Scheme
-NeoBundle 'morhetz/gruvbox'
+NeoBundle 'altercation/vim-colors-solarized'
