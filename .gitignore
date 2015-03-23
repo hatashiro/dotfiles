@@ -1,4 +1,4 @@
 .DS_Store
 /old
-/sources/.vim/bundle/*
+/sources/.vim/plugged/*
 .netrwhist
