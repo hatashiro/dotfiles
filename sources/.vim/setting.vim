@@ -32,3 +32,12 @@ set t_ut=
 
 " Clipboard
 set clipboard=unnamed
+
+" Emoji
+if emoji#available()
+  set completefunc=emoji#complete
+endif
+
+" SuperTab
+let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
+autocmd FileType * call SuperTabChain(&completefunc, "<c-p>")

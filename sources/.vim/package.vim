@@ -8,6 +8,7 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'junegunn/vim-emoji'
 
 " Syntaxes
 NeoBundle 'pangloss/vim-javascript'
