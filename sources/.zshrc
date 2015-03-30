@@ -93,9 +93,7 @@ function git(){hub $@}
 
 # Scala and etc
 export SCALA_HOME=$HOME/Works/env/scala
-export ACTIVATOR_HOME=$HOME/Works/env/activator-1.2.10
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/env/java.library.path"
-export PATH=$PATH:$SCALA_HOME/bin:$ACTIVATOR_HOME
 
 # Java Home
 export JAVA_HOME=`/usr/libexec/java_home`
