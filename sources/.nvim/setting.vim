@@ -25,11 +25,6 @@ set mouse=nicr
 set background=dark
 colorscheme solarized
 
-" xterm settings
-set term=xterm-256color
-set t_Co=256
-set t_ut=
-
 " Clipboard
 set clipboard=unnamed
 

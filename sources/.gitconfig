@@ -14,7 +14,7 @@
   g = grep --line-number
   sh = show --pretty=format:'%Cred%h %Cgreen%an %Creset%s' --name-status
 [core]
-  editor = /usr/bin/vim
+  editor = nvim
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f

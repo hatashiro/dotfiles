@@ -26,7 +26,6 @@ set tags=tags;/                 " http://stackoverflow.com/a/5019111
 set nowrap
 set textwidth=0                 " Don't wrap words by default.
 set ttyfast                     " We have a fast terminal connection.
-set ttyscroll=0                 " Turn off scrolling (this is faster).
 set undolevels=200              " Number of undo levels.
 set viminfo='20,\"50            " Read/write a .viminfo file, don't store more than
                                 " 50 lines of registers.
