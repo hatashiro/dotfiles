@@ -36,3 +36,8 @@ endif
 " SuperTab
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 autocmd FileType * call SuperTabChain(&completefunc, "<c-p>")
+
+" Reduce delays
+set ttimeout
+set ttimeoutlen=0
+set matchtime=0
