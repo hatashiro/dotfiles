@@ -22,8 +22,8 @@ set colorcolumn=80
 set mouse=nicr
 
 " Colorscheme
+colo seoul256
 set background=dark
-colorscheme solarized
 
 " Clipboard
 set clipboard=unnamed
