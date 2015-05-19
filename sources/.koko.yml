@@ -1,0 +1,23 @@
+user:
+  nick: noraesae
+  username: noraesae
+  realname: noraesae
+
+servers:
+  - name: HanIRC
+    host: irc.hanirc.org
+    encoding: CP949
+    nick: 좀비쨩
+  - name: Freenode
+    host: irc.freenode.net
+
+keys:
+  message: ["ㅑ"]
+  next-tab: ["ㅎ>ㅅ"]
+  previous-tab: ["ㅎ>ㅆ"]
+  scroll-down: ["ㅓ"]
+  scroll-up: ["ㅏ"]
+  scroll-top: ["ㅎ>ㅎ"]
+  scroll-bottom: ["shift+ㅎ"]
+  page-down: ["ctrl+ㄹ"]
+  page-up: ["ctrl+ㅠ"]
