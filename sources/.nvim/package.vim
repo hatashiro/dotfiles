@@ -25,4 +25,4 @@ Plug 'kongo2002/fsharp-vim'
 Plug 'groenewege/vim-less'
 
 " Color Scheme
-Plug 'junegunn/seoul256.vim'
+Plug 'altercation/vim-colors-solarized'

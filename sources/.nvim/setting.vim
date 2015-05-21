@@ -22,8 +22,9 @@ set colorcolumn=80
 set mouse=nicr
 
 " Colorscheme
-colo seoul256
-set background=dark
+colorscheme solarized
+set background=light
+let g:solarized_termcolors=256
 
 " Clipboard
 set clipboard=unnamed
