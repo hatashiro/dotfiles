@@ -7,13 +7,13 @@ servers:
   - name: HanIRC
     host: irc.hanirc.org
     encoding: CP949
-    nick: 좀비쨩
+    nick: 노래새
   - name: Freenode
     host: irc.freenode.net
 
 keys:
   message: ["ㅑ"]
-  next-tab: ["ㅎ>ㅅ"]
+  next-tab: ["ㅎ>ㅅ", "ctrl+tab"]
   previous-tab: ["ㅎ>ㅆ"]
   scroll-down: ["ㅓ"]
   scroll-up: ["ㅏ"]
