@@ -21,8 +21,11 @@ Plug 'derekwyatt/vim-scala'
 Plug 'vim-ruby/vim-ruby'
 Plug 'raichoo/haskell-vim'
 Plug 'leafgarland/typescript-vim'
-Plug 'kongo2002/fsharp-vim'
 Plug 'groenewege/vim-less'
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
 " Color Scheme
 Plug 'altercation/vim-colors-solarized'
