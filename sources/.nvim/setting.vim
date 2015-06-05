@@ -23,7 +23,7 @@ set mouse=nicr
 
 " Colorscheme
 colorscheme solarized
-set background=light
+set background=dark
 let g:solarized_termcolors=256
 
 " Clipboard
