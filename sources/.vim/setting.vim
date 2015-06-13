@@ -22,9 +22,8 @@ set colorcolumn=80
 set mouse=nicr
 
 " Colorscheme
-colorscheme solarized
+colorscheme base16-ocean
 set background=dark
-let g:solarized_termcolors=256
 
 " Clipboard
 set clipboard=unnamed

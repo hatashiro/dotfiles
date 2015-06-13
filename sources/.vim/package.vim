@@ -28,4 +28,4 @@ Plug 'fsharp/vim-fsharp', {
       \}
 
 " Color Scheme
-Plug 'altercation/vim-colors-solarized'
+Plug 'chriskempson/base16-vim'

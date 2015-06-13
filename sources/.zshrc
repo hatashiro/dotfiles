@@ -129,10 +129,6 @@ export PATH=$PATH:$HOME/Works/env/fsharp/nuget/bin
 alias fsc=fsharpc
 alias fsi=fsharpi
 
-# neovim
-alias vim=nvim
-export EDITOR=nvim
-
 # Ruby
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
