@@ -25,6 +25,11 @@ set mouse=nicr
 colorscheme base16-ocean
 set background=dark
 
+" xterm settings
+set term=xterm-256color
+set t_Co=256
+set t_ut=
+
 " Clipboard
 set clipboard=unnamed
 
