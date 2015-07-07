@@ -1,3 +1,0 @@
-#/usr/bin/env bash
-mkdir lib
-cp /Library/Java/Extensions/* lib/
