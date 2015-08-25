@@ -31,3 +31,6 @@
 
 ;; xterm
 (xterm-mouse-mode)
+
+;; follow symlinks
+(setq vc-follow-symlinks t)
