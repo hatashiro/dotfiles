@@ -19,3 +19,6 @@ do
 
   ln -s $path ~/
 done
+
+# Remove dangling symlinks in $HOME
+find -L $HOME -type l -maxdepth 1 | xargs rm
