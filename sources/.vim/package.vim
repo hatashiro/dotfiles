@@ -28,4 +28,4 @@ Plug 'fsharp/vim-fsharp', {
       \}
 
 " Color Scheme
-Plug 'chriskempson/base16-vim'
+Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim' }
