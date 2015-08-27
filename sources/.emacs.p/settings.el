@@ -15,4 +15,4 @@
     (company-complete-common)))
 
 ;; color scheme
-(require 'tomorrow-night-eighties-theme)
+(require 'base16-eighties-dark-theme)
