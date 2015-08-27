@@ -13,3 +13,6 @@
   (if (looking-at " +$")
       (indent-according-to-mode)
     (company-complete-common)))
+
+;; color scheme
+(require 'tomorrow-night-eighties-theme)
