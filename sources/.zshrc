@@ -1,5 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="lambda"
+# https://github.com/sindresorhus/pure
+ZSH_THEME="pure"
 
 # Personal scripts
 export PERSONAL_SCRIPT_PATH=$HOME/.dotfiles/scripts
