@@ -22,12 +22,14 @@ set colorcolumn=80
 set mouse=nicr
 
 " Colorscheme
-colorscheme Tomorrow-Night-Eighties
+let base16colorspace=256
+colorscheme base16-eighties
+set background=dark
 
 " xterm settings
-" set term=xterm-256color
-" set t_Co=256
-" set t_ut=
+set term=xterm-256color
+set t_Co=256
+set t_ut=
 
 " Clipboard
 set clipboard=unnamed
