@@ -76,3 +76,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Emacs
 export EDITOR=emacs
 alias em=emacs
+
+# Haskell
+export PATH="$HOME/Library/Haskell/bin:$PATH"
