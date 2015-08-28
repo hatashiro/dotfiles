@@ -21,13 +21,19 @@ Plug 'tpope/vim-fireplace'
 Plug 'digitaltoad/vim-jade'
 Plug 'derekwyatt/vim-scala'
 Plug 'vim-ruby/vim-ruby'
-Plug 'raichoo/haskell-vim'
+Plug 'vim-scripts/haskell.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'groenewege/vim-less'
 Plug 'fsharp/vim-fsharp', {
       \ 'for': 'fsharp',
       \ 'do':  'make fsautocomplete',
       \}
+
+" Haskell
+Plug 'lukerandall/haskellmode-vim'
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
+Plug 'eagletmt/ghcmod-vim'
+Plug 'eagletmt/neco-ghc'
 
 " Color Scheme
 Plug 'chriskempson/base16-vim'

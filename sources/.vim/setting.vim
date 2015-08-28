@@ -47,3 +47,10 @@ autocmd FileType * call SuperTabChain(&completefunc, "<c-p>")
 set ttimeout
 set ttimeoutlen=0
 set matchtime=0
+
+" Haskell
+" Disable haskell-vim omnifunc
+let g:haskellmode_completion_ghc = 0
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
