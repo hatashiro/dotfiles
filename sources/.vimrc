@@ -10,3 +10,4 @@ source ~/.vim/setting.vim
 source ~/.vim/command.vim
 source ~/.vim/key.vim
 source ~/.vim/neco.vim
+source ~/.vim/hack.vim
