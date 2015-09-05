@@ -23,6 +23,8 @@ set mouse=nicr
 
 " Colorscheme
 colorscheme anderson
+hi CursorLine ctermbg=237 ctermfg=None cterm=NONE
+hi ColorColumn ctermbg=237 ctermfg=None cterm=NONE
 
 " xterm settings
 set term=xterm-256color
