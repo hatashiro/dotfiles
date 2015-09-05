@@ -36,4 +36,4 @@ Plug 'eagletmt/ghcmod-vim'
 Plug 'eagletmt/neco-ghc'
 
 " Color Scheme
-Plug 'chriskempson/base16-vim'
+Plug 'gilgigilgil/anderson.vim'

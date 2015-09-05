@@ -26,11 +26,6 @@ export PATH="$PATH:/usr/local/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/l
 export PATH=/usr/local/bin:~/bin:$PATH
 function git(){hub $@}
 
-# base-16
-BASE16_SCHEME="eighties"
-BASE16_SHELL="$HOME/.dotfiles/resources/base16-shell/base16-$BASE16_SCHEME.dark.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
-
 # Scala and etc
 export SCALA_HOME=$HOME/Works/env/scala
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/env/java.library.path"

@@ -22,9 +22,7 @@ set colorcolumn=80
 set mouse=nicr
 
 " Colorscheme
-let base16colorspace=256
-colorscheme base16-eighties
-set background=dark
+colorscheme anderson
 
 " xterm settings
 set term=xterm-256color
