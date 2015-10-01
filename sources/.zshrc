@@ -15,7 +15,7 @@ fi
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOCONNECT=false
 
-plugins=(github osx tmux)
+plugins=(osx tmux)
 
 source $ZSH/oh-my-zsh.sh
 
