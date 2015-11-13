@@ -1,9 +1,16 @@
 " CtrlP
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'],
+    \ 2: ['.ctrlp', 'cd %s && git ls-files -co --exclude-standard'],
+    \ },
+  \ }
+
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+let g:ctrlp_root_markers = ['.ctrlp']
 
 " Set ts
 function! SetIndent(size)
