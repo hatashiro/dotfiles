@@ -33,3 +33,7 @@ nnoremap D d
 nnoremap d "_d
 vnoremap D d
 vnoremap d "_d
+
+au FileType haskell nnoremap <buffer> <C-T> :GhcModType<CR>
+au FileType haskell nnoremap <buffer> <C-T>q :GhcModTypeClear<CR>
+au FileType haskell nnoremap <buffer> <C-T>i :GhcModInfo<CR>
