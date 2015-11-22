@@ -30,7 +30,6 @@ Plug 'fsharp/vim-fsharp', {
       \}
 
 " Haskell
-Plug 'lukerandall/haskellmode-vim'
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'eagletmt/ghcmod-vim'
 Plug 'eagletmt/neco-ghc'
