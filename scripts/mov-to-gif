@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
 if [ -z "$3" ]; then
-  scale=800
+  scale=600
 else
   scale=$3
 fi
 
-ffmpeg -i "$1" -vf scale=$scale:-1 -r 10 -f image2pipe -vcodec ppm - |\
-convert -delay 5 -layers Optimize -loop 0 - "$2"
+if [ -z "$2" ]; then
+  out="out.gif"
+else
+  out=$2
+fi
+
+ffmpeg -i "$1" -filter:v scale=$scale:-1 -pix_fmt rgb24 -r 10 -f gif - |\
+gifsicle --optimize=3 --delay=3 > $out
