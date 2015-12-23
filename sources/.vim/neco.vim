@@ -100,3 +100,7 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = []
 let g:syntastic_scss_checkers = []
+
+" hardtime
+let g:hardtime_default_on = 1
+let g:hardtime_timeout = 500
