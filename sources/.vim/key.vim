@@ -40,6 +40,10 @@ vnoremap <S-j> <NOP>
 vnoremap <S-h> <NOP>
 vnoremap <S-l> <NOP>
 
+" Enable control+j/k
+inoremap  <C-k>  k
+noremap   <C-k>  k
+
 " Remap D into deletion without yanking.
 " Deletion without yanking is mapped to d.
 nnoremap D d
