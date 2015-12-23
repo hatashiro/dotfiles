@@ -16,6 +16,12 @@ vmap <C-\> <Leader>c<Space>
 " Tagbar
 nmap <Leader>, :TagbarToggle<CR>
 
+" Enable control+j/k
+noremap  <C-k>  <Up>
+inoremap <C-k>  <Up>
+noremap  <C-j>  <Down>
+inoremap <C-j>  <Down>
+
 " Disable arrows
 inoremap  <Up>     <NOP>
 inoremap  <Down>   <NOP>
@@ -39,10 +45,6 @@ vnoremap <S-k> <NOP>
 vnoremap <S-j> <NOP>
 vnoremap <S-h> <NOP>
 vnoremap <S-l> <NOP>
-
-" Enable control+j/k
-inoremap  <C-k>  k
-noremap   <C-k>  k
 
 " Remap D into deletion without yanking.
 " Deletion without yanking is mapped to d.
