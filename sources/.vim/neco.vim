@@ -85,25 +85,17 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+" Resolve conflict between vim-multiple-cursors and neocomplete
+" Called once right before you start selecting multiple cursors
+function! Multiple_cursors_before()
+  if exists(':NeoCompleteLock')==2
+    exe 'NeoCompleteLock'
+  endif
+endfunction
 
-" syntastic
-"
-"
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_javascript_checkers = []
-let g:syntastic_scss_checkers = []
-
-" hardtime
-let g:hardtime_default_on = 1
-let g:hardtime_timeout = 500
-let g:list_of_normal_keys = ["h", "j", "k", "l", "-", "+"]
-let g:list_of_visual_keys = ["h", "j", "k", "l", "-", "+"]
-let g:list_of_insert_keys = []
+" Called once only when the multiple selection is canceled (default <Esc>)
+function! Multiple_cursors_after()
+  if exists(':NeoCompleteUnlock')==2
+    exe 'NeoCompleteUnlock'
+  endif
+endfunction
