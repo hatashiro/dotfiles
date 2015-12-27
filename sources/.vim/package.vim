@@ -21,7 +21,7 @@ Plug 'tpope/vim-fireplace'
 Plug 'digitaltoad/vim-jade'
 Plug 'derekwyatt/vim-scala'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/haskell.vim'
+Plug 'neovimhaskell/haskell-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'groenewege/vim-less'
 Plug 'fsharp/vim-fsharp', {
@@ -32,6 +32,7 @@ Plug 'fsharp/vim-fsharp', {
 " Haskell
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'eagletmt/ghcmod-vim'
+Plug 'Twinside/vim-hoogle'
 Plug 'eagletmt/neco-ghc'
 
 " Color Scheme
