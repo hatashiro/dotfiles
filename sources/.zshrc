@@ -73,4 +73,4 @@ export EDITOR=emacs
 alias em=emacs
 
 # Haskell
-export PATH="$HOME/.stack/programs/x86_64-osx/ghc-7.10.2/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
