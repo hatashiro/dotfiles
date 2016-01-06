@@ -13,7 +13,7 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/syntastic'
 
 " Syntaxes
-Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'hdima/python-syntax'
 Plug 'fatih/vim-go'
