@@ -44,3 +44,7 @@ set listchars=tab:\ \             " a tab should display as "  ", trailing white
 set listchars+=trail:.            " show trailing spaces as dots
 set listchars+=extends:>
 set listchars+=precedes:<
+
+" italic font handling
+set t_ZH=^[[3m
+set t_ZR=^[[23m

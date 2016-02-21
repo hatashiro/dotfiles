@@ -26,6 +26,9 @@ export PATH="$PATH:/usr/local/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/l
 export PATH=/usr/local/bin:~/bin:$PATH
 function git(){hub $@}
 
+# Terminal
+export TERM=xterm-256color-italic
+
 # Scala and etc
 export SCALA_HOME=$HOME/Works/env/scala
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/env/java.library.path"
