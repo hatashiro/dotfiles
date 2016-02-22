@@ -29,6 +29,9 @@ function git(){hub $@}
 # Terminal
 export TERM=xterm-256color
 
+# NeoVim
+alias vim=nvim
+
 # Scala and etc
 export SCALA_HOME=$HOME/Works/env/scala
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8 -Djava.library.path=$HOME/Works/env/java.library.path"

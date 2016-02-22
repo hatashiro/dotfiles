@@ -1,3 +1,6 @@
+" Sets
+set colorcolumn=80
+
 " CtrlP
 let g:ctrlp_user_command = {
   \ 'types': {
@@ -30,13 +33,7 @@ set mouse=nicr
 
 " Colorscheme
 colorscheme anderson
-hi CursorLine ctermbg=237 ctermfg=None cterm=NONE
 hi ColorColumn ctermbg=237 ctermfg=None cterm=NONE
-
-" xterm settings
-set term=xterm-256color
-set t_Co=256
-set t_ut=
 
 " Clipboard
 set clipboard=unnamed
