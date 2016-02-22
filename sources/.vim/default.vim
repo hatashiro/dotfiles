@@ -25,7 +25,6 @@ set tabpagemax=50               " Extend maximum of tab page to 50 (default 10).
 set tags=tags;/                 " http://stackoverflow.com/a/5019111
 set nowrap
 set textwidth=0                 " Don't wrap words by default.
-set ttyfast                     " We have a fast terminal connection.
 set undolevels=200              " Number of undo levels.
 set viminfo='20,\"50            " Read/write a .viminfo file, don't store more than
                                 " 50 lines of registers.
@@ -44,7 +43,3 @@ set listchars=tab:\ \             " a tab should display as "  ", trailing white
 set listchars+=trail:.            " show trailing spaces as dots
 set listchars+=extends:>
 set listchars+=precedes:<
-
-" italic font handling
-set t_ZH=^[[3m
-set t_ZR=^[[23m
