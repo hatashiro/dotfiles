@@ -32,10 +32,9 @@ set mouse=nicr
 colorscheme anderson
 hi CursorLine ctermbg=237 ctermfg=None cterm=NONE
 hi ColorColumn ctermbg=237 ctermfg=None cterm=NONE
-hi Comment cterm=italic
 
 " xterm settings
-set term=xterm-256color-italic
+set term=xterm-256color
 set t_Co=256
 set t_ut=
 

@@ -27,7 +27,7 @@ export PATH=/usr/local/bin:~/bin:$PATH
 function git(){hub $@}
 
 # Terminal
-export TERM=xterm-256color-italic
+export TERM=xterm-256color
 
 # Scala and etc
 export SCALA_HOME=$HOME/Works/env/scala
