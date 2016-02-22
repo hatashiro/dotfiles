@@ -31,6 +31,7 @@ export TERM=xterm-256color
 
 # NeoVim
 alias vim=nvim
+export EDITOR=nvim
 
 # Scala and etc
 export SCALA_HOME=$HOME/Works/env/scala
