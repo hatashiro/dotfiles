@@ -30,6 +30,7 @@ set viminfo='20,\"50            " Read/write a .viminfo file, don't store more t
                                 " 50 lines of registers.
 set wildmode=list:longest       " Path/file expansion in colon-mode.
 set wildchar=<TAB>              "
+set laststatus=0                " No status line
 
 set expandtab
 set smarttab
