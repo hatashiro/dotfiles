@@ -9,8 +9,8 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'rking/ag.vim'
 Plug 'junegunn/vim-emoji'
-Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/syntastic'
+Plug 'Shougo/deoplete.nvim'
 
 " Syntaxes
 Plug 'jelera/vim-javascript-syntax'
