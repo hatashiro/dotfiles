@@ -29,8 +29,10 @@ set colorcolumn=80
 set mouse=nicr
 
 " Colorscheme
-colorscheme anderson
-hi ColorColumn ctermbg=237 ctermfg=None cterm=NONE
+" colorscheme anderson
+" hi ColorColumn ctermbg=237 ctermfg=None cterm=NONE
+set background=dark
+colorscheme solarized
 
 " Sets
 set nocursorline

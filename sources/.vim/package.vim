@@ -36,7 +36,7 @@ Plug 'Twinside/vim-hoogle'
 Plug 'eagletmt/neco-ghc'
 
 " Color Scheme
-Plug 'gilgigilgil/anderson.vim'
+Plug 'altercation/vim-colors-solarized'
 
 " Enjoy some hard time!
 Plug 'takac/vim-hardtime'
