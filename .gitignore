@@ -3,3 +3,4 @@
 /sources/.vim/plugged/*
 .netrwhist
 /sources/.config/configstore
+/sources/.config/hub
