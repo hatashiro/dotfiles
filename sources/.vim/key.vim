@@ -1,4 +1,6 @@
 " EasyMotion
+nmap f <Plug>(easymotion-fl)
+nmap F <Plug>(easymotion-Fl)
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 
