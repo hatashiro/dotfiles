@@ -61,7 +61,7 @@ let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
-autocmd BufRead,BufWritePost *.hs GhcModCheckAndLintAsync
+autocmd BufRead,BufWritePost *.hs GhcModCheckAsync
 
 " multiple-cursor
 let g:multi_cursor_exit_from_visual_mode = 0
