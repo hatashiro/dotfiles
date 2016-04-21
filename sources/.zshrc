@@ -81,3 +81,4 @@ alias em=emacs
 
 # Haskell
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.stack/programs/x86_64-osx/ghc-7.10.3/bin"
