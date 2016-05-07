@@ -1,4 +1,6 @@
-" Plugins
+" ========================================
+" Common Plugins
+" ========================================
 Plug 'kien/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ddollar/nerdcommenter'
@@ -12,7 +14,9 @@ Plug 'junegunn/vim-emoji'
 Plug 'scrooloose/syntastic'
 Plug 'Shougo/deoplete.nvim'
 
+" ========================================
 " Syntaxes
+" ========================================
 Plug 'jelera/vim-javascript-syntax'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'hdima/python-syntax'
@@ -24,16 +28,24 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'groenewege/vim-less'
-Plug 'fsharp/vim-fsharp', {
-      \ 'for': 'fsharp',
-      \ 'do':  'make fsautocomplete',
-      \}
+Plug 'raichoo/purescript-vim'
+
+" ========================================
+" Language-specific Plugins
+" ========================================
 
 " Haskell
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'eagletmt/ghcmod-vim'
 Plug 'Twinside/vim-hoogle'
 Plug 'eagletmt/neco-ghc'
+
+" PureScript
+Plug 'frigoeu/psc-ide-vim'
+
+" ========================================
+" Appearance and Usability
+" ========================================
 
 " Color Scheme
 Plug 'altercation/vim-colors-solarized'
