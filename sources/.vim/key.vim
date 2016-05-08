@@ -60,3 +60,6 @@ au FileType haskell nnoremap <buffer> <C-T>q :GhcModTypeClear<CR>
 au FileType haskell nnoremap <buffer> <C-T>i :GhcModInfo<CR>
 
 au FileType purescript nnoremap <buffer> <C-T> :PSCIDEtype<CR>
+
+" Rainbow Parentheses
+nmap <Leader>r :RainbowParentheses!!<CR>
