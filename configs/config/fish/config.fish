@@ -20,6 +20,7 @@ alias git 'hub'
 set -x EDITOR nvim
 set -x TERM xterm-256color
 set -e fish_greeting
+set -x LESS '-R'
 
 # path
 set -x PATH /usr/local/bin $PATH
