@@ -1,7 +1,12 @@
+set -x PATH $PATH $HOME/.dotfiles/scripts
+
 # tmux
 if status --is-interactive
-  if test -z (echo $TMUX)
-    tmux
+ if test -z (echo $TMUX)
+    tmux-status
+    if test $status -eq 0
+      exec tmux
+    end
   end
 end
 
@@ -18,7 +23,6 @@ set -e fish_greeting
 
 # path
 set -x PATH /usr/local/bin $PATH
-set -x PATH $PATH $HOME/.dotfiles/scripts
 set -x PATH $PATH $HOME/bin
 set -x PATH $PATH $HOME/Works/env/pypy3/bin
 set -x PATH $PATH $HOME/.local/bin
