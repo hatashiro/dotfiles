@@ -1,6 +1,8 @@
 #!/usr/bin/env python
+from __future__ import print_function
 import re
 import subprocess
+import sys
 
 def run_tmux_command(args):
     p = subprocess.Popen(['tmux'] + args, stdout=subprocess.PIPE,
@@ -37,17 +39,19 @@ def process_input(input_str):
             run_tmux_command(['kill-session', '-t', arg])
     elif action == 'a':
         run_tmux_command(['attach-session', '-t', arguments[0]])
+        sys.exit(1)
 
 def main():
     detached_sessions = get_detached_sessions()
     if len(detached_sessions) > 0:
-        print 'There are detached tmux sessions!'
+        print('There are detached tmux sessions!')
         for session in detached_sessions:
             template = (" \033[92msession\033[0m \033[94m{id!s}\033[0m"
                         " with \033[94m{window_count!s}\033[0m \033[92mwindows\033[0m"
                         " created at {created_datetime!s}")
-            print template.format(**session)
-        process_input(raw_input('What to do (k to kill, a to attach): '))
+            print(template.format(**session))
+        print('What to do (k to kill, a to attach): ', end='')
+        process_input(raw_input())
 
 if __name__ == "__main__":
     main()
