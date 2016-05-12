@@ -10,14 +10,14 @@ else
 fi
 
 # Link dotfiles
-for f in `find sources -name ".*" -maxdepth 1`
+for f in `find configs -maxdepth 1`
 do
   filename=$(basename $f)
   path=$PWD/$f
 
-  mv $HOME/$filename ./old/
+  mv $HOME/.$filename ./old/
 
-  ln -s $path ~/
+  ln -s $path ~/.$filename
 done
 
 # Remove dangling symlinks in $HOME

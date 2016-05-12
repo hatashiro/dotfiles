@@ -1,5 +1,5 @@
 .DS_Store
 /old
-/sources/.vim/plugged/*
+/configs/vim/plugged/*
 .netrwhist
-/sources/.config/**/*
+/configs/config/**/*
