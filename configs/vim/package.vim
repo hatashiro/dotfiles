@@ -30,6 +30,7 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'groenewege/vim-less'
 Plug 'raichoo/purescript-vim'
+Plug 'dag/vim-fish'
 
 " ========================================
 " Language-specific Plugins
