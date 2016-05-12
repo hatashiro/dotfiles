@@ -2,5 +2,4 @@
 /old
 /sources/.vim/plugged/*
 .netrwhist
-/sources/.config/configstore
-/sources/.config/hub
+/sources/.config/**/*
