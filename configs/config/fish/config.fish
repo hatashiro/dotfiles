@@ -15,6 +15,8 @@ alias vim 'nvim'
 alias pypy 'pypy3.2'
 alias tmux-reload 'tmux source-file ~/.tmux.conf'
 alias git 'hub'
+alias python 'python3'
+alias pip 'pip3'
 
 # settings
 set -x EDITOR nvim
