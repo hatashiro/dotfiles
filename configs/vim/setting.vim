@@ -2,7 +2,7 @@
 let g:ctrlp_user_command = {
   \ 'types': {
     \ 1: ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'],
-    \ 2: ['.ctrlp', 'cd %s && git ls-files -co --exclude-standard'],
+    \ 2: ['.ctrlp', 'bash -c "cd %s && git ls-files -co --exclude-standard"'],
     \ },
   \ }
 
