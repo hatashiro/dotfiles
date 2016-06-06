@@ -14,6 +14,7 @@ end
 alias vim 'nvim'
 alias tmux-reload 'tmux source-file ~/.tmux.conf'
 alias git 'hub'
+alias bnode 'babel-node'
 
 # settings
 set -x EDITOR nvim
