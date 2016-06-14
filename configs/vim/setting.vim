@@ -21,10 +21,6 @@ endfunction
 call SetIndent(2)
 command! -nargs=1 Ts call SetIndent(<f-args>)
 
-" Sets
-set cursorline
-set colorcolumn=80
-
 " Mouse setting
 set mouse=nicr
 
