@@ -87,3 +87,9 @@ let g:list_of_insert_keys = []
 let g:deoplete#enable_at_startup = 1
 let g:necoghc_enable_detailed_browse = 1
 let g:deoplete#file#enable_buffer_path = 1
+
+" vue
+autocmd BufNewFile,BufRead *.vue set filetype=html
+
+" html
+let g:syntastic_html_checkers = []
