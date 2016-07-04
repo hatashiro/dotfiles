@@ -52,7 +52,7 @@ Plug 'frigoeu/psc-ide-vim'
 " ========================================
 
 " Color Scheme
-Plug 'altercation/vim-colors-solarized'
+Plug 'joshdick/onedark.vim'
 
 " Enjoy some hard time!
 Plug 'takac/vim-hardtime'

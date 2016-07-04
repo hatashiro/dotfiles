@@ -25,14 +25,13 @@ command! -nargs=1 Ts call SetIndent(<f-args>)
 set mouse=nicr
 
 " Colorscheme
-" colorscheme anderson
-" hi ColorColumn ctermbg=237 ctermfg=None cterm=NONE
-set background=dark
-colorscheme solarized
+set termguicolors
+colorscheme onedark
 
-" Sets
+" cursorline and colorcolumn
 set nocursorline
 set colorcolumn=80
+" hi ColorColumn ctermbg=237 ctermfg=None cterm=NONE
 
 " Clipboard
 set clipboard=unnamed
