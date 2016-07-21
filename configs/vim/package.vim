@@ -30,6 +30,9 @@ Plug 'eagletmt/neco-ghc'
 " PureScript
 Plug 'frigoeu/psc-ide-vim'
 
+" HTML
+Plug 'gregsexton/matchtag'
+
 " ========================================
 " Appearance and Usability
 " ========================================
