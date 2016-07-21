@@ -10,10 +10,10 @@ Plug 'majutsushi/tagbar'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'rking/ag.vim'
-Plug 'junegunn/vim-emoji'
 Plug 'scrooloose/syntastic'
 Plug 'Shougo/deoplete.nvim'
 Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'Shougo/context_filetype.vim'
 
 " ========================================
 " Syntaxes

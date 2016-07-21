@@ -36,15 +36,6 @@ set colorcolumn=80
 " Clipboard
 set clipboard=unnamed
 
-" Emoji
-if emoji#available()
-  set completefunc=emoji#complete
-endif
-
-" SuperTab
-let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
-autocmd FileType * call SuperTabChain(&completefunc, "<c-p>")
-
 " Reduce delays
 set ttimeout
 set ttimeoutlen=0
@@ -82,10 +73,11 @@ let g:list_of_normal_keys = ["h", "j", "k", "l", "-", "+"]
 let g:list_of_visual_keys = ["h", "j", "k", "l", "-", "+"]
 let g:list_of_insert_keys = []
 
-" neco
+" deoplete
 let g:deoplete#enable_at_startup = 1
 let g:necoghc_enable_detailed_browse = 1
 let g:deoplete#file#enable_buffer_path = 1
+let g:deoplete#disable_auto_complete = 1
 
 " vue
 autocmd BufNewFile,BufRead *.vue set filetype=html
