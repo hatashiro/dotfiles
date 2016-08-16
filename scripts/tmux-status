@@ -18,7 +18,7 @@ def get_detached_sessions():
     raw_sessions = filter(lambda line: len(line) > 0, out.split("\n"))
 
     def parse_raw_session(raw_session):
-        pattern = '(\d+): (\d+) windows \(created (.+)\)(.+)'
+        pattern = '(\d+).*: (\d+) windows \(created (.+)\)(.+)'
         result = re.match(pattern, raw_session)
         return {
             "id": result.group(1),
