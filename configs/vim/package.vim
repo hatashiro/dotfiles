@@ -22,6 +22,9 @@ Plug 'osyo-manga/vim-precious'
 " All in one
 Plug 'sheerun/vim-polyglot'
 
+" JavaScript
+Plug 'flowtype/vim-flow'
+
 " Haskell
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'eagletmt/ghcmod-vim'
