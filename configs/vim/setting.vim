@@ -83,6 +83,3 @@ autocmd BufNewFile,BufRead *.vue set filetype=html
 
 " html
 let g:syntastic_html_checkers = []
-
-" javascript
-let g:javascript_plugin_flow = 1
