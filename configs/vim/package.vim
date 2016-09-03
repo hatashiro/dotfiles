@@ -21,6 +21,7 @@ Plug 'osyo-manga/vim-precious'
 " ========================================
 " All in one
 Plug 'sheerun/vim-polyglot'
+let g:polyglot_disabled = ['elm']
 
 " JavaScript
 Plug 'flowtype/vim-flow'
@@ -36,6 +37,9 @@ Plug 'frigoeu/psc-ide-vim'
 
 " HTML
 Plug 'gregsexton/matchtag'
+
+" Elm
+Plug 'ElmCast/elm-vim'
 
 " ========================================
 " Appearance and Usability
