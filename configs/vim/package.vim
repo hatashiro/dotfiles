@@ -15,6 +15,7 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'Shougo/context_filetype.vim'
 Plug 'osyo-manga/vim-precious'
+Plug 'editorconfig/editorconfig-vim'
 
 " ========================================
 " Syntaxes
