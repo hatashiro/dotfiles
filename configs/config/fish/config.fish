@@ -27,7 +27,7 @@ set -x PATH /usr/local/bin $PATH
 set -x PATH $HOME/.pyenv/shims $PATH
 set -x PATH $PATH $HOME/bin
 set -x PATH $PATH $HOME/.local/bin
-set -x PATH $PATH $HOME/.stack/programs/x86_64-osx/ghc-7.10.3/bin
+set -x PATH $PATH $HOME/.stack/programs/x86_64-osx/ghc-8.0.1/bin
 set -x PATH $PATH ./node_modules/.bin
 
 # fnm
