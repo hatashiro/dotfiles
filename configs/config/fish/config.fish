@@ -2,7 +2,7 @@ set -x PATH $PATH $HOME/.dotfiles/scripts
 
 # tmux
 if status --is-interactive
- if test -z (echo $TMUX)
+  if test -z (echo $TMUX)
     tmux-status
     if test $status -eq 0
       exec tmux
