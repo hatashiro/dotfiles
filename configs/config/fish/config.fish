@@ -31,7 +31,7 @@ set -x PATH $PATH $HOME/.stack/programs/x86_64-osx/ghc-8.0.1/bin
 set -x PATH $PATH ./node_modules/.bin
 
 # fnm
-fnm 6
+status --is-interactive; and fnm 6
 
 # lang
 set -x LC_ALL en_US.UTF-8
