@@ -7,7 +7,6 @@
   (evil-leader/set-leader "<SPC>")
   (evil-leader/set-key
     "<SPC>" 'execute-extended-command
-    "e" 'find-file-other-frame
     "w" 'switch-to-buffer)
   )
 
