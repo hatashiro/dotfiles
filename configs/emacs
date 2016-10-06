@@ -18,6 +18,7 @@
 (add-to-list 'load-path "~/.emacs.d/custom/")
 (require 'custom-ui)
 (require 'custom-backups)
+(require 'custom-lang)
 
 ;; The code below is automatically generated.
 (custom-set-variables
