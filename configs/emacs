@@ -12,6 +12,7 @@
 (require 'pkg-ivy)
 (require 'pkg-ui)
 (require 'pkg-completion)
+(require 'pkg-editor)
 
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
