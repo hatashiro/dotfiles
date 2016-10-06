@@ -7,7 +7,8 @@
   (evil-leader/set-leader "<SPC>")
   (evil-leader/set-key
     "<SPC>" 'execute-extended-command
-    "e" 'find-file)
+    "e" 'find-file-other-frame
+    "w" 'switch-to-buffer)
   )
 
 (use-package evil-nerd-commenter
