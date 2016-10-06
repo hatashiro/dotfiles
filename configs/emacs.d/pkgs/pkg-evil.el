@@ -2,7 +2,6 @@
   :ensure t
 
   :config
-  (require 'evil-leader)
   (global-evil-leader-mode)
 
   (evil-leader/set-leader "<SPC>")
@@ -28,7 +27,6 @@
     )
 
   :config
-  (require 'evil)
   (evil-mode 1)
 
   ;; command alias
