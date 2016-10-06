@@ -3,3 +3,5 @@
 /configs/vim/plugged/*
 .netrwhist
 /configs/config/**/*
+/configs/emacs.d/elpa
+/configs/emacs.d/auto-save-list
