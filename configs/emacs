@@ -9,6 +9,7 @@
 ;; package settings
 (add-to-list 'load-path "~/.emacs.d/pkgs/")
 (require 'pkg-evil)
+(require 'pkg-ivy)
 
 ;; The code below is automatically generated.
 (custom-set-variables
