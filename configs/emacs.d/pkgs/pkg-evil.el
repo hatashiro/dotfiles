@@ -17,6 +17,14 @@
   (global-set-key (kbd "C-\\") 'evilnc-comment-or-uncomment-lines)
   )
 
+(use-package evil-snipe
+  :ensure t
+
+  :config
+  (evil-snipe-override-mode 1)
+  (setq evil-snipe-scope 'buffer)
+  )
+
 (use-package evil
   :ensure t
 
