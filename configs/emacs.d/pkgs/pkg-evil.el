@@ -1,3 +1,16 @@
+(use-package evil-leader
+  :ensure t
+
+  :config
+  (require 'evil-leader)
+  (global-evil-leader-mode)
+
+  (evil-leader/set-leader "<SPC>")
+  (evil-leader/set-key
+    "<SPC>" 'execute-extended-command
+    "e" 'find-file)
+  )
+
 (use-package evil
   :ensure t
 
