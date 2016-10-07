@@ -22,6 +22,7 @@
 (require 'custom-ui)
 (require 'custom-backups)
 (require 'custom-lang)
+(require 'custom-copy)
 
 ;; The code below is automatically generated.
 (custom-set-variables
