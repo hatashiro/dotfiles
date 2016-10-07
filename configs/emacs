@@ -16,6 +16,7 @@
 (require 'pkg-editor)
 (require 'pkg-neotree)
 (require 'pkg-haskell)
+(require 'pkg-markdown)
 
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
