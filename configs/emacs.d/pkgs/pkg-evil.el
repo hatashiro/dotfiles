@@ -7,7 +7,8 @@
   (evil-leader/set-leader "<SPC>")
   (evil-leader/set-key
     "<SPC>" 'execute-extended-command
-    "w" 'switch-to-buffer)
+    "w" 'switch-to-buffer
+    "t" 'neotree-toggle)
   )
 
 (use-package evil-nerd-commenter

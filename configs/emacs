@@ -14,6 +14,7 @@
 (require 'pkg-completion)
 (require 'pkg-project)
 (require 'pkg-editor)
+(require 'pkg-neotree)
 (require 'pkg-haskell)
 
 ;; custom settings
