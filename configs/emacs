@@ -25,6 +25,7 @@
 (require 'custom-lang)
 (require 'custom-copy)
 (require 'custom-window)
+(require 'custom-etc)
 
 ;; The code below is automatically generated.
 (custom-set-variables
