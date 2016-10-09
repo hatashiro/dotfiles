@@ -18,13 +18,12 @@
 
   :init
   (add-hook 'haskell-mode-hook 'intero-mode)
-  (add-hook 'haskell-mode-hook (lambda ()
-    (evil-leader/set-key
-      "hi" 'intero-info
-      "hj" 'intero-goto-definition)
-    ;; override open behaviours
-    (define-key evil-normal-state-map "o" 'haskell-evil-open-below)
-    (define-key evil-normal-state-map "O" 'haskell-evil-open-above)))
+  (add-hook 'haskell-mode-hook (lambda () (evil-leader/set-key
+                                            "hi" 'intero-info
+                                            "hj" 'intero-goto-definition)))
+  ;; override open behaviours
+  (evil-define-key 'normal haskell-mode-map "o" 'haskell-evil-open-below
+                                            "O" 'haskell-evil-open-above)
   )
 
 (provide 'pkg-haskell)
