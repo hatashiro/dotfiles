@@ -26,6 +26,18 @@
   (setq evil-snipe-scope 'buffer)
   )
 
+(defun evil-shift-left-visual ()
+  (interactive)
+  (evil-shift-left (region-beginning) (region-end))
+  (evil-normal-state)
+  (evil-visual-restore))
+
+(defun evil-shift-right-visual ()
+  (interactive)
+  (evil-shift-right (region-beginning) (region-end))
+  (evil-normal-state)
+  (evil-visual-restore))
+
 (use-package evil
   :ensure t
 
@@ -43,6 +55,11 @@
   (evil-ex-define-cmd "Wq" "wq")
   (evil-ex-define-cmd "WQ" "wq")
   (evil-ex-define-cmd "Q" "q")
+
+  ;; shift
+  (add-hook 'after-change-major-mode-hook (lambda () (setq evil-shift-width 2)))
+  (define-key evil-visual-state-map (kbd ">") 'evil-shift-right-visual)
+  (define-key evil-visual-state-map (kbd "<") 'evil-shift-left-visual)
   )
 
 (provide 'pkg-evil)
