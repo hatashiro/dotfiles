@@ -38,6 +38,11 @@
   (evil-normal-state)
   (evil-visual-restore))
 
+(evil-define-command evil-set-tab-size (size)
+  :repeat nil
+  (interactive "<f>")
+  (setq js-indent-level (string-to-number size)))
+
 (use-package evil
   :ensure t
 
@@ -55,6 +60,7 @@
   (evil-ex-define-cmd "Wq" "wq")
   (evil-ex-define-cmd "WQ" "wq")
   (evil-ex-define-cmd "Q" "q")
+  (evil-ex-define-cmd "Ts" 'evil-set-tab-size)
 
   ;; shift
   (add-hook 'after-change-major-mode-hook (lambda () (setq evil-shift-width 2)))
