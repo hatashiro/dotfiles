@@ -41,7 +41,8 @@
 (evil-define-command evil-set-tab-size (size)
   :repeat nil
   (interactive "<f>")
-  (setq js-indent-level (string-to-number size)))
+  (setq js-indent-level (string-to-number size))
+  (setq evil-shift-width (string-to-number size)))
 
 (use-package evil
   :ensure t
