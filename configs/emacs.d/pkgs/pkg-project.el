@@ -3,6 +3,7 @@
 
   :config
   (projectile-mode t)
+  (setq projectile-enable-caching t)
   )
 
 (use-package counsel-projectile
@@ -12,7 +13,15 @@
   (counsel-projectile-on)
 
   (evil-leader/set-key
-    "e" 'counsel-projectile-find-file)
+    "p" 'counsel-projectile-find-file)
+
+  (define-key ivy-minibuffer-map (kbd "<f5>")
+    (lambda ()
+      (interactive)
+      (ivy-quit-and-run
+       (projectile-invalidate-cache nil)
+       (counsel-projectile-find-file))
+      ))
   )
 
 (provide 'pkg-project)
