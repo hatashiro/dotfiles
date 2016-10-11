@@ -6,3 +6,4 @@
 /configs/emacs.d/elpa
 /configs/emacs.d/auto-save-list
 /configs/emacs.d/projectile-bookmarks.eld
+/configs/emacs.d/projectile.cache
