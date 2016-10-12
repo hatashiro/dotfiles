@@ -51,6 +51,8 @@
     ;; bind ctrl-j/k to just move
     ("C-j" . evil-next-line)
     ("C-k" . evil-previous-line)
+    ("C-d" . evil-scroll-down)
+    ("C-u" . evil-scroll-up)
     )
 
   :config
