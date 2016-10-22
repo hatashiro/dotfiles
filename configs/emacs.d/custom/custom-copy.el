@@ -36,8 +36,7 @@
   (evil-append-line nil)
   (newline)
   (evil-normal-state)
-  (shell-command-on-region (point) (if mark-active (mark) (point)) "pbpaste" nil t)
-  (backward-delete-char-untabify 1))
+  (shell-command-on-region (point) (if mark-active (mark) (point)) "pbpaste" nil t))
 
 (define-key evil-motion-state-map (kbd "C-y") 'evil-pbcopy)
 (define-key evil-normal-state-map (kbd "C-y") 'evil-pbcopy-line)
