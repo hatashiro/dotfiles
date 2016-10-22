@@ -18,6 +18,7 @@
 (require 'pkg-haskell)
 (require 'pkg-markdown)
 (require 'pkg-elm)
+(require 'pkg-purescript)
 
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
