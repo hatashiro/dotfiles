@@ -19,6 +19,7 @@
 (require 'pkg-markdown)
 (require 'pkg-elm)
 (require 'pkg-purescript)
+(require 'pkg-javascript)
 
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
