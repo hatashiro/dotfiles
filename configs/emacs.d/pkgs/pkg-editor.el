@@ -14,4 +14,14 @@
                       :foreground "red")
   )
 
+(use-package fill-column-indicator
+  :ensure t
+  :init
+  (setq-default fci-rule-column 80)
+  (setq fci-rule-width 1)
+  (setq fci-rule-color "black")
+  (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+  (global-fci-mode 1)
+  )
+
 (provide 'pkg-editor)
