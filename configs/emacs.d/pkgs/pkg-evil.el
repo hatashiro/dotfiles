@@ -69,6 +69,9 @@
   (add-hook 'after-change-major-mode-hook (lambda () (setq evil-shift-width 2)))
   (define-key evil-visual-state-map (kbd ">") 'evil-shift-right-visual)
   (define-key evil-visual-state-map (kbd "<") 'evil-shift-left-visual)
+
+  ;; search module
+  (setq evil-search-module t)
   )
 
 (provide 'pkg-evil)
