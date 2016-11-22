@@ -14,14 +14,14 @@
                       :foreground "red")
   )
 
-(use-package fill-column-indicator
+(setq ad-redefinition-action 'accept)
+
+(use-package isearch+
   :ensure t
-  :init
-  (setq-default fci-rule-column 80)
-  (setq fci-rule-width 1)
-  (setq fci-rule-color "#7f7f7f")
-  (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
-  (global-fci-mode 1)
+  )
+
+(use-package modeline-posn
+  :ensure t
   )
 
 (provide 'pkg-editor)
