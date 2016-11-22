@@ -74,4 +74,10 @@
   (setq evil-search-module t)
   )
 
+(use-package evil-visualstar
+  :ensure t
+  :init
+  (global-evil-visualstar-mode)
+  )
+
 (provide 'pkg-evil)
