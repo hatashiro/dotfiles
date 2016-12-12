@@ -2,4 +2,8 @@
   :ensure t
   )
 
+(use-package vue-mode
+  :ensure t
+  )
+
 (provide 'pkg-javascript)
