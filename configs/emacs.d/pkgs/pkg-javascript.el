@@ -13,6 +13,7 @@
 (use-package mmm-mode
   :ensure t
   :config
+  (setq mmm-parse-when-idle t)
   (setq mmm-global-mode 'maybe)
 
   (dolist (langsets '(("script" . ((coffee . coffee-mode)
