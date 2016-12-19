@@ -16,6 +16,7 @@ alias tmux-reload 'tmux source-file ~/.tmux.conf'
 alias git 'hub'
 alias bnode 'babel-node'
 alias em 'emacs'
+alias psp 'psc-package'
 
 # settings
 set -x EDITOR nvim
