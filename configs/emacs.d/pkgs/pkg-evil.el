@@ -42,7 +42,10 @@
   :repeat nil
   (interactive "<f>")
   (setq js-indent-level (string-to-number size))
-  (setq evil-shift-width (string-to-number size)))
+  (setq evil-shift-width (string-to-number size))
+  (setq web-mode-code-indent-offset (string-to-number size))
+  (setq web-mode-css-indent-offset (string-to-number size))
+  )
 
 (use-package evil
   :ensure t
