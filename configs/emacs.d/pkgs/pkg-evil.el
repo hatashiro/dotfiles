@@ -42,6 +42,7 @@
   :repeat nil
   (interactive "<f>")
   (setq js-indent-level (string-to-number size))
+  (setq css-indent-offset (string-to-number size))
   (setq evil-shift-width (string-to-number size))
   (setq web-mode-code-indent-offset (string-to-number size))
   (setq web-mode-css-indent-offset (string-to-number size))
@@ -66,6 +67,7 @@
   (evil-ex-define-cmd "Wq" "wq")
   (evil-ex-define-cmd "WQ" "wq")
   (evil-ex-define-cmd "Q" "q")
+  (evil-ex-define-cmd "S" "s")
   (evil-ex-define-cmd "Ts" 'evil-set-tab-size)
 
   ;; shift
