@@ -1,15 +1,5 @@
 set -x PATH $PATH $HOME/.dotfiles/scripts
 
-# tmux
-if status --is-interactive
-  if test -z (echo $TMUX)
-    tmux-status
-    if test $status -eq 0
-      exec tmux
-    end
-  end
-end
-
 # aliases
 alias vim 'nvim'
 alias tmux-reload 'tmux source-file ~/.tmux.conf'
@@ -39,3 +29,11 @@ status --is-interactive; and fnm 6
 # lang
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
+
+# tmux
+function tm
+  tmux-status
+  if test $status -eq 0
+    exec tmux
+  end
+end
