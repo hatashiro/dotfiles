@@ -33,6 +33,6 @@ set -x LC_CTYPE en_US.UTF-8
 function tm
   tmux-status
   if test $status -eq 0
-    exec tmux
+    tmux
   end
 end
