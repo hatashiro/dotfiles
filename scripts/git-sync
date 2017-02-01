@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# sync upstream and master
+
+if [[ -z "$1" ]]; then
+    branch="master"
+else
+    branch="$1"
+fi
+
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+git co $branch
+git pull upstream $branch
+git push master $branch
+git co $current_branch
