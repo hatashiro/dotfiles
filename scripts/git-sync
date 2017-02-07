@@ -11,5 +11,8 @@ current_branch=$(git rev-parse --abbrev-ref HEAD)
 
 git co $branch
 git pull upstream $branch
-git push master $branch
+git push origin $branch
 git co $current_branch
+
+git remote prune origin
+git remote prune upstream
