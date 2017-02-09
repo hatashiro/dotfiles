@@ -36,3 +36,12 @@ function tm
     tmux
   end
 end
+
+# psci
+set psci_env $HOME/Works/env/psci
+function psci
+  set prev (pwd)
+  cd $psci_env
+  pulp psci
+  cd $prev
+end
