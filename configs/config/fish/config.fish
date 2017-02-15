@@ -13,6 +13,7 @@ set -x EDITOR nvim
 set -x TERM xterm-256color
 set -e fish_greeting
 set -x LESS '-R'
+set -x EMACS_TRUE_COLOR_SEPARATOR ';'
 
 # path
 set -x PATH /usr/local/bin $PATH
