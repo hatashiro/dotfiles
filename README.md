@@ -1,20 +1,15 @@
-dotfiles
-========
+# dotfiles
 
-dotfiles for [me](https://github.com/noraesae)
+A complete dev environment of [@noraesae](https://github.com/noraesae)
 
-How to Use
-----------
+## How to use
 
 ```
 $ git clone https://github.com/noraesae/dotfiles.git .dotfiles
 $ cd .dotfiles
-$ git submodule init
-$ git submodule update
 $ ./install.sh
 ```
 
-License
--------
+## License
 
-MIT
+[MIT](LICENSE)
