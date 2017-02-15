@@ -85,4 +85,33 @@
   (global-evil-visualstar-mode)
   )
 
+(use-package evil-mc
+  :ensure t
+  :init
+  (require 'evil-mc)
+  (global-evil-mc-mode 1)
+  (defun col-at-point (point)
+    (save-excursion (goto-char point) (current-column)))
+
+  (defun evil--mc-make-cursor-at-col-insert (startcol _endcol orig-line)
+    (end-of-line)
+    (move-to-column startcol)
+    (unless (or (= (line-number-at-pos) orig-line) (> startcol (current-column)))
+      (evil-mc-make-cursor-here)))
+
+  (defun evil--mc-make-vertical-cursors (beg end func)
+    (evil-mc-pause-cursors)
+    (apply-on-rectangle func
+                        beg end (line-number-at-pos (point)))
+    (evil-mc-resume-cursors)
+    (evil-normal-state))
+
+  (defun evil-mc-insert-vertical-cursors (beg end)
+    (interactive (list (region-beginning) (region-end)))
+    (evil--mc-make-vertical-cursors beg end 'evil--mc-make-cursor-at-col-insert)
+    (move-to-column (min (col-at-point beg) (col-at-point end))))
+
+  (evil-define-key 'visual global-map "gI" 'evil-mc-insert-vertical-cursors)
+  )
+
 (provide 'pkg-evil)
