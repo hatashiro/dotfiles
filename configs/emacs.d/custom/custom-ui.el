@@ -11,9 +11,9 @@
 (setq whitespace-style '(face trailing tabs lines-tail))
 (setq whitespace-line-column 80)
 (set-face-background 'whitespace-trailing "red")
-(set-face-background 'whitespace-tab "color-236")
+(set-face-background 'whitespace-tab "gray20")
 (set-face-foreground 'whitespace-line nil)
-(set-face-background 'whitespace-line "color-238")
+(set-face-background 'whitespace-line "gray20")
 
 ;; (line, column)
 (setq line-number-mode t)
