@@ -112,6 +112,8 @@
     (move-to-column (min (col-at-point beg) (col-at-point end))))
 
   (evil-define-key 'visual global-map "gI" 'evil-mc-insert-vertical-cursors)
+  (evil-define-key 'normal evil-mc-key-map (kbd "<escape>") 'evil-mc-undo-all-cursors)
+  (evil-define-key 'normal evil-mc-key-map (kbd "C-p") nil)
   )
 
 (provide 'pkg-evil)
