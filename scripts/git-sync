@@ -9,10 +9,12 @@ fi
 
 current_branch=$(git rev-parse --abbrev-ref HEAD)
 
+git stash
 git co $branch
 git pull upstream $branch
 git push origin $branch
 git co $current_branch
+git stash pop
 
 git remote prune origin
 git remote prune upstream
