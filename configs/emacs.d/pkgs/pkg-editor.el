@@ -2,7 +2,12 @@
   :ensure t
   :init
   (add-hook 'prog-mode-hook (editorconfig-mode 1))
-  (add-hook 'text-mode-hook (editorconfig-mode 1)))
+  (add-hook 'text-mode-hook (editorconfig-mode 1))
+  (add-hook 'editorconfig-custom-hooks
+            (lambda (hash)
+              (setq web-mode-script-padding 0)
+              (setq web-mode-style-padding 0)))
+  )
 
 (use-package smartparens
   :ensure t
