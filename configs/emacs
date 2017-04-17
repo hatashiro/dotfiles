@@ -20,6 +20,7 @@
 (require 'pkg-elm)
 (require 'pkg-purescript)
 (require 'pkg-javascript)
+(require 'pkg-idris)
 
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
