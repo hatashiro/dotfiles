@@ -114,6 +114,11 @@
   (evil-define-key 'visual global-map "gI" 'evil-mc-insert-vertical-cursors)
   (evil-define-key 'normal evil-mc-key-map (kbd "<escape>") 'evil-mc-undo-all-cursors)
   (evil-define-key 'normal evil-mc-key-map (kbd "C-p") nil)
+
+  (nconc evil-mc-known-commands
+         '((typescript-insert-and-indent . ((self-insert-command . evil-mc-execute-default-call-with-count)))
+           )
+         )
   )
 
 (provide 'pkg-evil)
