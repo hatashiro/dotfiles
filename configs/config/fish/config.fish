@@ -43,6 +43,6 @@ set psci_env $HOME/Works/env/psci
 function psci
   set prev (pwd)
   cd $psci_env
-  pulp psci
+  psc-package repl
   cd $prev
 end
