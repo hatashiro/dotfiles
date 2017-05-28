@@ -22,6 +22,7 @@ set -x PATH $PATH $HOME/bin
 set -x PATH $PATH $HOME/.local/bin
 set -x PATH $PATH $HOME/.stack/programs/x86_64-osx/ghc-8.0.2/bin
 set -x PATH $PATH ./node_modules/.bin
+set -x PATH $PATH $HOME/.cargo/bin
 
 # fnm
 status --is-interactive; and fnm 6
