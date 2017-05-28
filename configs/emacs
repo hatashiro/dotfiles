@@ -21,6 +21,7 @@
 (require 'pkg-purescript)
 (require 'pkg-javascript)
 (require 'pkg-idris)
+(require 'pkg-rust)
 
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
