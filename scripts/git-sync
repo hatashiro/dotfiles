@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sync upstream and master
+# sync origin (and upstream if existing)
 
 if [[ -z "$1" ]]; then
     branch="master"
@@ -7,14 +7,31 @@ else
     branch="$1"
 fi
 
+up=0
+for r in $(git remote show); do
+    if [[ $r == "upstream" ]]; then
+        up=1
+    fi
+done;
+
 current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+git remote update
 
 git stash
 git co $branch
-git pull upstream $branch
-git push origin $branch
+
+if [ $up -ne 0 ]; then
+    git pull upstream $branch
+    git push origin $branch
+else
+    git pull origin $branch
+fi
+
 git co $current_branch
 git stash pop
 
 git remote prune origin
-git remote prune upstream
+if [ $up -ne 0 ]; then
+    git remote prune upstream
+fi
