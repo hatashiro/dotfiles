@@ -15,6 +15,9 @@
   (evil-leader/set-key
     "p" 'counsel-projectile-find-file)
 
+  (define-key ivy-minibuffer-map (kbd "<escape>")
+    'minibuffer-keyboard-quit)
+
   (define-key ivy-minibuffer-map (kbd "<f5>")
     (lambda ()
       (interactive)
