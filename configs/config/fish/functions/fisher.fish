@@ -16,21 +16,45 @@ end
 function $fisher_cmd_name -d "fish plugin manager"
     switch "$FISH_VERSION"
         case 2.1.2 2.1.1 2.1.0 2.0.0
-            __fisher_log error "You need fish &2.2.0& or higher to use fisherman."
+            echo "You need fish 2.2.0 or higher to use fisherman."
 
-            if command -s brew > /dev/null
-                __fisher_log info "Run &brew up; brew upgrade --HEAD fish&"
+            if type brew >/dev/null 2>&1
+                echo "Run: brew upgrade fish"
             else
-                __fisher_log info "
+                echo "
                     Refer to your package manager documentation for
                     instructions on how to upgrade your fish build.
                 "
             end
 
             return 1
+
+        case 2.2.0
+            __fisher_log info "
+                You need fish 2.3.0 or higher to take advantage of snippets.
+                Without it some plugins might not work.
+            "
+
+            if type -q brew
+                __fisher_log info "Please run &brew upgrade fish&"
+            else
+                __fisher_log info "
+
+                    Refer to your package manager documentation
+                    for instructions on how to upgrade your fish build.
+
+                    If you can not upgrade, append the following code
+                    to your ~/.config/fish/config.fish:
+
+                    &for file in ~/.config/fish/conf.d/*.fish&
+                    	&source \$file&
+                    &end&
+
+                "
+            end
     end
 
-    set -g fisher_version "2.12.0"
+    set -g fisher_version "2.13.0"
     set -g fisher_spinners ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏
     set -g __fisher_stdout /dev/stdout
     set -g __fisher_stderr /dev/stderr
@@ -93,7 +117,7 @@ function $fisher_cmd_name -d "fish plugin manager"
     command mkdir -p {"$fish_path","$fish_config"}/{conf.d,functions,completions} "$fisher_config" "$fisher_cache"
     or return 1
 
-    set -l completions "$fish_config/completions/$fisher_cmd_name.fish"
+    set -l completions "$fish_path/completions/$fisher_cmd_name.fish"
 
     if test ! -e "$completions"
         echo "$fisher_cmd_name --complete" > "$completions"
@@ -1620,26 +1644,28 @@ function __fisher_plugin_get_url_info -a option
         return
     end
 
-    command cat {$argv}/.git/config ^ /dev/null | command awk -v option="$option" '
-        /url/ {
-            n = split($3, s, "/")
+    for dir in $argv
+        git -C $dir config remote.origin.url ^ /dev/null | command awk -v option="$option" '
+            {
+                n = split($0, s, "/")
 
-            if ($3 ~ /https:\/\/gist/) {
-                printf("# %s\n", $3)
-                next
+                if ($0 ~ /https:\/\/gist/) {
+                    printf("# %s\n", $0)
+                    next
+                }
+
+                if (option == "--dirname") {
+                    printf("%s\n", s[n - 1])
+
+                } else if (option == "--basename") {
+                    printf("%s\n", s[n])
+
+                } else {
+                    printf("%s/%s\n", s[n - 1], s[n])
+                }
             }
-
-            if (option == "--dirname") {
-                printf("%s\n", s[n - 1])
-
-            } else if (option == "--basename") {
-                printf("%s\n", s[n])
-
-            } else {
-                printf("%s/%s\n", s[n - 1], s[n])
-            }
-        }
-    '
+        '
+    end
 end
 
 
@@ -2222,6 +2248,32 @@ Install some plugins\.
 .nf
 
 '"$fisher_cmd_name"' z fzf edc/bass omf/tab
+.
+.fi
+.
+.IP "" 0
+.
+.P
+Install a specific branch\.
+.
+.IP "" 4
+.
+.nf
+
+'"$fisher_cmd_name"' edc/bass:master
+.
+.fi
+.
+.IP "" 0
+.
+.P
+Install a specific tag\.
+.
+.IP "" 4
+.
+.nf
+
+'"$fisher_cmd_name"' done@1.2.0
 .
 .fi
 .
