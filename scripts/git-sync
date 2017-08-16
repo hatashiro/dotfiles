@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # sync origin (and upstream if existing)
 
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
 if [[ -z "$1" ]]; then
-    branch="master"
+    branch=$current_branch
 else
     branch="$1"
 fi
@@ -14,7 +16,6 @@ for r in $(git remote show); do
     fi
 done;
 
-current_branch=$(git rev-parse --abbrev-ref HEAD)
 
 git remote update
 
