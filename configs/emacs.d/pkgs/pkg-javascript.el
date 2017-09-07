@@ -1,11 +1,3 @@
-(use-package js2-mode
-  :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.js?\\'" . js2-mode))
-  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-mode))
-  (add-to-list 'auto-mode-alist '("\\.mjs?\\'" . js2-mode))
-  )
-
 (use-package web-mode
   :ensure t
   :config
@@ -14,6 +6,11 @@
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
   (setq web-mode-style-padding 0)
+
+  (add-to-list 'auto-mode-alist '("\\.js?\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.mjs?\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.vue?\\'" . web-mode))
   )
 
 (use-package mmm-mode
@@ -40,8 +37,6 @@
               :front ,front
               :back ,back)))
           (mmm-add-mode-ext-class nil "\\.vue?\\'" class-name)))))
-
-  (add-to-list 'auto-mode-alist '("\\.vue?\\'" . web-mode))
   )
 
 (use-package tide
