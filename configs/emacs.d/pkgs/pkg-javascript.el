@@ -11,6 +11,15 @@
   (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.mjs?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.vue?\\'" . web-mode))
+
+  (add-to-list 'web-mode-comment-formats '("javascript" . "//" ))
+  (add-to-list 'web-mode-comment-formats '("jsx" . "//" ))
+  (add-to-list 'web-mode-comment-formats '("html" . "//" ))
+
+  (add-hook 'web-mode-hook
+            (lambda ()
+              (global-set-key (kbd "C-\\") 'web-mode-comment-or-uncomment)
+              ))
   )
 
 (use-package mmm-mode
