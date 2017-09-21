@@ -19,7 +19,7 @@
 
   (add-hook 'web-mode-hook
             (lambda ()
-              (global-set-key (kbd "C-\\") 'web-mode-comment-or-uncomment)
+              (global-set-key (kbd "C-\\") 'evilnc-comment-or-uncomment-lines)
               ))
   )
 
