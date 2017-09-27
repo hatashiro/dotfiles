@@ -1,11 +1,11 @@
 # dotfiles
 
-A complete dev environment of [@noraesae](https://github.com/noraesae)
+A complete dev environment of [@utatti](https://github.com/utatti)
 
 ## How to use
 
 ```
-$ git clone https://github.com/noraesae/dotfiles.git .dotfiles
+$ git clone https://github.com/utatti/dotfiles.git .dotfiles
 $ cd .dotfiles
 $ ./install.sh
 ```
