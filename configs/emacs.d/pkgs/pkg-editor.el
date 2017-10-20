@@ -13,6 +13,7 @@
   :ensure t
   :config
   (require 'smartparens-config)
+  (smartparens-global-mode 1)
   (show-smartparens-global-mode t)
   (set-face-attribute 'sp-show-pair-match-face nil
                       :underline nil
