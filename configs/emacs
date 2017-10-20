@@ -28,6 +28,7 @@
 (add-to-list 'load-path "~/.emacs.d/custom/")
 (require 'custom-ui)
 (require 'custom-backups)
+(require 'custom-keybindings)
 (require 'custom-lang)
 (require 'custom-copy)
 (require 'custom-window)

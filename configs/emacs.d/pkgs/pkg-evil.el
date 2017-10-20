@@ -11,13 +11,6 @@
     "t" 'neotree-toggle)
   )
 
-(use-package evil-nerd-commenter
-  :ensure t
-
-  :config
-  (global-set-key (kbd "C-\\") 'evilnc-comment-or-uncomment-lines)
-  )
-
 (use-package evil-snipe
   :ensure t
 

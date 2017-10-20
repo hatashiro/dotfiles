@@ -16,11 +16,6 @@
   (add-to-list 'web-mode-comment-formats '("javascript" . "//" ))
   (add-to-list 'web-mode-comment-formats '("jsx" . "//" ))
   (add-to-list 'web-mode-comment-formats '("html" . "//" ))
-
-  (add-hook 'web-mode-hook
-            (lambda ()
-              (global-set-key (kbd "C-\\") 'evilnc-comment-or-uncomment-lines)
-              ))
   )
 
 (use-package mmm-mode
