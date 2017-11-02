@@ -25,7 +25,7 @@ set -x PATH $PATH ./node_modules/.bin
 set -x PATH $PATH $HOME/.cargo/bin
 
 # fnm
-status --is-interactive; and fnm 6
+status --is-interactive; and fnm 8
 
 # lang
 set -x LC_ALL en_US.UTF-8
