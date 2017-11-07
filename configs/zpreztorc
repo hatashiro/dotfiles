@@ -1,0 +1,19 @@
+zstyle ':prezto:load' pmodule \
+  'gnu-utility' \
+  'utility' \
+  'archive' \
+  'autosuggestions' \
+  'completion' \
+  'osx' \
+  'syntax-highlighting' \
+  'history-substring-search'
+
+zstyle ':prezto:*:*' color 'yes'
+
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
