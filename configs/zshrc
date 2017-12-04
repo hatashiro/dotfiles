@@ -36,6 +36,14 @@ path+='$HOME/.cargo/bin'
 export LC_ALL='en_US.UTF-8'
 export LC_CTYPE='en_US.UTF-8'
 
+# history
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=5000
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
+
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
