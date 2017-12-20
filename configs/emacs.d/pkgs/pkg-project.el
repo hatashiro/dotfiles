@@ -10,8 +10,6 @@
   :ensure t
 
   :config
-  (counsel-projectile-on)
-
   (evil-leader/set-key
     "p" 'counsel-projectile-find-file)
 
