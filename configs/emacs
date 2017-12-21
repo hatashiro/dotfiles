@@ -23,6 +23,7 @@
 (require 'pkg-idris)
 (require 'pkg-rust)
 (require 'pkg-go)
+(require 'pkg-clojure)
 
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
