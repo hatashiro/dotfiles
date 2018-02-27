@@ -1,6 +1,10 @@
 # some default path
 path+=$HOME/.dotfiles/scripts
 
+# zsh settings
+unsetopt correct
+unsetopt correct_all
+
 # aliases
 alias em='emacs'
 alias git='hub'
@@ -15,7 +19,7 @@ tm() {
   fi
 }
 
-# settings
+# exports
 export EDITOR='nvim'
 export TERM='xterm-256color'
 export LESS='-R'
