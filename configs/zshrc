@@ -1,10 +1,6 @@
 # some default path
 path+=$HOME/.dotfiles/scripts
 
-# zsh settings
-unsetopt correct
-unsetopt correct_all
-
 # aliases
 alias em='emacs'
 alias git='hub'
@@ -57,6 +53,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # zpresto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
+# disable auto correction
+unsetopt correct
+unsetopt correct_all
 
 # theme: sindresorhus/pure
 autoload -U promptinit; promptinit
