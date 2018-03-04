@@ -8,15 +8,11 @@
   (evil-leader/set-key
     "<SPC>" 'execute-extended-command
     "w" 'switch-to-buffer
-    "t" 'neotree-toggle)
-  )
-
-(use-package evil-snipe
-  :ensure t
-
-  :config
-  (evil-snipe-override-mode 1)
-  (setq evil-snipe-scope 'buffer)
+    "t" 'neotree-toggle
+    "j" 'evilem-motion-next-line
+    "k" 'evilem-motion-privious-line
+    "f" 'evilem-motion-find-char
+    "F" 'evilem-motion-find-char-backward)
   )
 
 (defun evil-shift-left-visual ()
@@ -112,6 +108,10 @@
          '((typescript-insert-and-indent . ((self-insert-command . evil-mc-execute-default-call-with-count)))
            )
          )
+  )
+
+(use-package evil-easymotion
+  :ensure t
   )
 
 (provide 'pkg-evil)
