@@ -3,7 +3,8 @@
 
 ;; line number
 (global-linum-mode 1)
-(setq linum-format "%d  ")
+(setq linum-format "%d ")
+(set-face-background 'linum nil)
 
 ;; spaces
 (require 'whitespace)
