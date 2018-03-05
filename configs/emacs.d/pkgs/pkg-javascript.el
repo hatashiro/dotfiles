@@ -69,11 +69,4 @@
   (setq tide-format-options '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunctions nil))
   )
 
-(use-package npm-mode
-  :ensure t
-  :init
-  (add-hook 'web-mode-hook 'npm-mode)
-  (add-hook 'typescript-mode-hook 'npm-mode)
-  )
-
 (provide 'pkg-javascript)
