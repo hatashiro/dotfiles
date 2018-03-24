@@ -9,10 +9,9 @@
     "<SPC>" 'execute-extended-command
     "w" 'switch-to-buffer
     "t" 'neotree-toggle
-    "j" 'evilem-motion-next-line
-    "k" 'evilem-motion-privious-line
-    "f" 'evilem-motion-find-char
-    "F" 'evilem-motion-find-char-backward)
+    "s" 'avy-goto-char-2
+    "f" 'avy-goto-char-2-below
+    "F" 'avy-goto-char-2-above)
   )
 
 (defun evil-shift-left-visual ()
@@ -108,10 +107,6 @@
          '((typescript-insert-and-indent . ((self-insert-command . evil-mc-execute-default-call-with-count)))
            )
          )
-  )
-
-(use-package evil-easymotion
-  :ensure t
   )
 
 (provide 'pkg-evil)
