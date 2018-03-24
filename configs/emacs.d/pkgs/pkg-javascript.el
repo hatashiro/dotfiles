@@ -9,6 +9,7 @@
 
   (add-to-list 'auto-mode-alist '("\\.js?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.mjs?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.vue?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
@@ -19,8 +20,13 @@
 
   (add-hook
    'web-mode-hook
-   (lambda () (if (equal web-mode-content-type "javascript")
-                  (web-mode-set-content-type "jsx")))
+   (lambda ()
+     (if (equal web-mode-content-type "javascript")
+         (web-mode-set-content-type "jsx"))
+     (if (string-match "tsx?" (file-name-extension buffer-file-name))
+         (setup-tide-mode))
+
+     )
    )
   )
 
