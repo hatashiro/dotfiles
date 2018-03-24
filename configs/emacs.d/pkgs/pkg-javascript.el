@@ -16,6 +16,12 @@
   (add-to-list 'web-mode-comment-formats '("javascript" . "//" ))
   (add-to-list 'web-mode-comment-formats '("jsx" . "//" ))
   (add-to-list 'web-mode-comment-formats '("html" . "//" ))
+
+  (add-hook
+   'web-mode-hook
+   (lambda () (if (equal web-mode-content-type "javascript")
+                  (web-mode-set-content-type "jsx")))
+   )
   )
 
 (use-package mmm-mode
