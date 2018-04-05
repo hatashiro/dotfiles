@@ -25,6 +25,11 @@
 (require 'pkg-go)
 (require 'pkg-clojure)
 
+;; third-party packages
+(add-to-list 'load-path "~/.emacs.d/3rd/")
+(require 'isearch+)
+(require 'modeline-posn)
+
 ;; custom settings
 (add-to-list 'load-path "~/.emacs.d/custom/")
 (require 'custom-ui)

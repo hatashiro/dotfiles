@@ -36,14 +36,6 @@
 
 (setq ad-redefinition-action 'accept)
 
-(use-package isearch+
-  :ensure t
-  )
-
-(use-package modeline-posn
-  :ensure t
-  )
-
 (use-package avy
   :ensure t
   )
