@@ -1,6 +1,5 @@
 set backspace=indent,eol,start  " Allow backspacing over everything in insert mode.
 set encoding=utf-8              " Set default encoding to UTF-8.
-set esckeys                     " Cursor keys in insert mode.
 set fencs=ucs-bom,utf-8,cp949   " Add cp949 to the character encodings for the files
                                 " written in the windows.
 set fileformats=unix            " Show ^M for a carraige return.
