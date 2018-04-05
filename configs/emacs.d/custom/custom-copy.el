@@ -10,11 +10,11 @@
            (cua--global-mark-active))
       (cua-copy-region-to-global-mark beg end))
      ((eq type 'block)
-      (shell-command-on-region beg end "pbcopy"))
+      (shell-command-on-region beg end "tmux loadb -"))
      ((eq type 'line)
-      (shell-command-on-region beg end "pbcopy"))
+      (shell-command-on-region beg end "tmux loadb -"))
      (t
-      (shell-command-on-region beg end "pbcopy")))))
+      (shell-command-on-region beg end "tmux loadb -")))))
 
 (evil-define-operator evil-pbcopy-line (beg end type register)
   :motion evil-line
@@ -27,7 +27,7 @@
               end (evil-range-end range)
               type (evil-type range))))
     (evil-exit-visual-state))
-  (shell-command-on-region beg end "pbcopy")
+  (shell-command-on-region beg end "tmux loadb -")
   (kill-buffer "*Shell Command Output*"))
 
 (defun evil-pbpaste ()
@@ -36,7 +36,7 @@
   (evil-append-line nil)
   (newline)
   (evil-normal-state)
-  (shell-command-on-region (point) (if mark-active (mark) (point)) "pbpaste" nil t))
+  (shell-command-on-region (point) (if mark-active (mark) (point)) "tmux showb" nil t))
 
 (define-key evil-motion-state-map (kbd "C-y") 'evil-pbcopy)
 (define-key evil-normal-state-map (kbd "C-y") 'evil-pbcopy-line)
