@@ -32,6 +32,12 @@ path+=$HOME/.stack/programs/x86_64-osx/ghc-8.0.2/bin
 path+=./node_modules/.bin
 path+=$HOME/.cargo/bin
 
+# Go settings
+export GOROOT=$HOME/Works/env/go
+export GOPATH=$HOME/Works/go
+path+=$GOROOT/bin
+path+=$GOPATH/bin
+
 # lang
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
