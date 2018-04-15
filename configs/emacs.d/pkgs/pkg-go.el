@@ -4,7 +4,11 @@
   :config
   (add-hook 'before-save-hook 'gofmt-before-save)
   (setq-default tab-width 2)
-  (define-key evil-normal-state-map (kbd "M-.") 'godef-jump)
+  (add-hook 'go-mode-hook
+            (lambda ()
+              (define-key evil-normal-state-map (kbd "M-.") 'godef-jump)
+              )
+            )
   )
 
 (use-package company-go
