@@ -26,7 +26,6 @@ set mouse=nicr
 
 " Colorscheme
 set termguicolors
-colorscheme onedark
 
 " cursorline and colorcolumn
 set nocursorline
@@ -65,18 +64,6 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = []
 let g:syntastic_scss_checkers = []
-
-" hardtime
-let g:hardtime_default_on = 1
-let g:hardtime_timeout = 500
-let g:list_of_normal_keys = ["h", "j", "k", "l", "-", "+"]
-let g:list_of_visual_keys = ["h", "j", "k", "l", "-", "+"]
-let g:list_of_insert_keys = []
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
-let g:necoghc_enable_detailed_browse = 1
-let g:deoplete#file#enable_buffer_path = 1
 
 " vue
 autocmd BufNewFile,BufRead *.vue set filetype=html

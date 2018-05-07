@@ -11,7 +11,6 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/syntastic'
-Plug 'Shougo/deoplete.nvim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'Shougo/context_filetype.vim'
 Plug 'osyo-manga/vim-precious'
@@ -41,13 +40,3 @@ Plug 'gregsexton/matchtag'
 
 " Elm
 Plug 'ElmCast/elm-vim'
-
-" ========================================
-" Appearance and Usability
-" ========================================
-
-" Color Scheme
-Plug 'joshdick/onedark.vim'
-
-" Enjoy some hard time!
-Plug 'takac/vim-hardtime'
