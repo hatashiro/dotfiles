@@ -1,0 +1,25 @@
+{
+    "editor.fontFamily": "Hack, Menlo, monospace",
+    "editor.fontSize": 11,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "vim.cmdLineInitialColon": true,
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.leader": " ",
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["leader", "/"],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ]
+        }
+    ],
+    "window.zoomLevel": -1,
+    "workbench.iconTheme": "vscode-icons"
+}
