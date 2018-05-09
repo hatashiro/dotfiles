@@ -22,6 +22,3 @@ done
 
 # Remove dangling symlinks in $HOME
 find -L $HOME -type l -maxdepth 1 | xargs rm
-
-# VS Code
-./vscode/install.sh
