@@ -24,5 +24,6 @@
         }
     ],
     "window.zoomLevel": -1,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Ayu Mirage"
 }
