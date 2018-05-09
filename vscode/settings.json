@@ -12,7 +12,10 @@
     "vim.leader": " ",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
-            "before": ["leader", "/"],
+            "before": [
+                "leader",
+                "/"
+            ],
             "commands": [
                 {
                     "command": ":nohl"
