@@ -6,6 +6,8 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.showExitAlert": false,
     "vim.cmdLineInitialColon": true,
     "vim.easymotion": true,
     "vim.hlsearch": true,
