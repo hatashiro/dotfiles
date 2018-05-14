@@ -26,6 +26,7 @@
         }
     ],
     "window.zoomLevel": -1,
+    "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Ayu Mirage"
 }
