@@ -49,12 +49,17 @@
     },
     {
         "key": "ctrl+j",
-        "command": "workbench.action.terminal.focusPrevious",
+        "command": "workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus"
     },
     {
         "key": "ctrl+k",
-        "command": "workbench.action.terminal.focusNext",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.split",
         "when": "terminalFocus"
     }
 ]
