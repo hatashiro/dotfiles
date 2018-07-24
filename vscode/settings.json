@@ -8,15 +8,14 @@
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.showExitAlert": false,
-    "vim.cmdLineInitialColon": true,
     "vim.easymotion": true,
     "vim.hlsearch": true,
     "vim.leader": " ",
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "leader",
-                "/"
+                "s"
             ],
             "commands": [
                 {
