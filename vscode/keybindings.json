@@ -61,5 +61,10 @@
         "key": "ctrl+\\",
         "command": "workbench.action.terminal.split",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "extension.vim_escape",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
     }
 ]
