@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+const { execSync } = require('child_process');
+const { readFileSync, writeFileSync } = require('fs');
+const { resolve } = require('path');
+
+const cmd = process.argv[2] || '';
+
+const pkgFilePath = resolve(__dirname, '../vscode/packages');
+
+if (cmd.startsWith('i')) {
+  // install
+  const packages = readFileSync(pkgFilePath, 'utf-8').trim().split('\n');
+  packages.forEach(pkg => {
+    try {
+      execSync(`code --install-extension ${pkg}`);
+      console.log(`Installed: ${pkg}`);
+    } catch (err) {
+      console.error(`Error on install '${pkg}': ${err.code}/${err.message}`);
+    }
+  });
+} else {
+  // sync
+  const packages = execSync('code --list-extensions')
+    .toString()
+    .trim()
+    .split('\n')
+    .sort();
+  writeFileSync(pkgFilePath, packages.join('\n') + '\n');
+  console.log('Synced:\n');
+  packages.forEach(pkg => console.log(`- ${pkg}`));
+}

@@ -1,0 +1,31 @@
+{
+    "editor.fontFamily": "Hack, Menlo, monospace",
+    "editor.fontSize": 11,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.showExitAlert": false,
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.leader": " ",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "leader",
+                "s"
+            ],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ]
+        }
+    ],
+    "window.zoomLevel": -1,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Ayu Mirage"
+}
