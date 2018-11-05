@@ -6,6 +6,7 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "python.formatting.provider": "yapf",
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.showExitAlert": false,
     "vim.easymotion": true,
