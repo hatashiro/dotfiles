@@ -30,6 +30,7 @@ path+=$HOME/.local/bin
 path+=$HOME/.stack/programs/x86_64-osx/ghc-8.0.2/bin
 path+=./node_modules/.bin
 path+=$HOME/.cargo/bin
+path+=$HOME/.miniconda3/bin
 
 # Go settings
 export GOROOT=$HOME/Works/env/go
