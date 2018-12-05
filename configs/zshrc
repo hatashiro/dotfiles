@@ -2,7 +2,6 @@
 path+=$HOME/.dotfiles/scripts
 
 # aliases
-alias em='emacs'
 alias git='hub'
 alias tmux-reload='tmux source-file ~/.tmux.conf'
 alias vim='nvim'
