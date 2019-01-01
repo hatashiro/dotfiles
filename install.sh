@@ -22,3 +22,6 @@ done
 
 # Remove dangling symlinks in $HOME
 find -L $HOME -type l -maxdepth 1 | xargs rm
+
+# Set default command-line settings
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
