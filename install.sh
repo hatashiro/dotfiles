@@ -25,3 +25,6 @@ find -L $HOME -type l -maxdepth 1 | xargs rm
 
 # Set default command-line settings
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Set global gitignore
+git config --global core.excludesfile ~/.gitignore_global
