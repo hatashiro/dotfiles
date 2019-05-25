@@ -9,25 +9,10 @@
     "python.formatting.provider": "yapf",
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.showExitAlert": false,
-    "vim.easymotion": true,
-    "vim.hlsearch": true,
-    "vim.leader": " ",
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "leader",
-                "s"
-            ],
-            "commands": [
-                {
-                    "command": ":nohl"
-                }
-            ]
-        }
-    ],
     "window.zoomLevel": -1,
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Ayu Mirage",
-    "terminal.integrated.shell.osx": "zsh"
+    "terminal.integrated.shell.osx": "zsh",
+    "workbench.startupEditor": "newUntitledFile"
 }
