@@ -2,7 +2,6 @@
 " Common Plugins
 " ========================================
 Plug 'kien/ctrlp.vim'
-Plug 'Lokaltog/vim-easymotion'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Shougo/context_filetype.vim'
 Plug 'osyo-manga/vim-precious'

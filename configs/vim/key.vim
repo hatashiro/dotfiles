@@ -1,12 +1,6 @@
-" EasyMotion
-nmap f <Plug>(easymotion-fl)
-nmap F <Plug>(easymotion-Fl)
-nmap s <Plug>(easymotion-s2)
-nmap t <Plug>(easymotion-t2)
-
 " Multiple Indent
-vmap >> >><ESC>gv
-vmap << <<<ESC>gv
+vmap <Tab> >><ESC>gv
+vmap <S-Tab> <<<ESC>gv
 
 " Disable arrows
 inoremap  <Up>     <NOP>

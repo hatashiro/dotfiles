@@ -10,6 +10,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+
 let g:ctrlp_root_markers = ['.ctrlp']
 
 " Set ts
@@ -21,15 +22,9 @@ endfunction
 call SetIndent(2)
 command! -nargs=1 Ts call SetIndent(<f-args>)
 
-" Mouse setting
-set mouse=nicr
-
 " cursorline and colorcolumn
 set nocursorline
 set colorcolumn=80
-
-" Clipboard
-set clipboard=unnamed
 
 " Reduce delays
 set ttimeout

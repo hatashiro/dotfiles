@@ -4,7 +4,6 @@ set fencs=ucs-bom,utf-8,cp949   " Add cp949 to the character encodings for the f
                                 " written in the windows.
 set fileformats=unix            " Show ^M for a carraige return.
 set history=100                 " Number of lines of command line history.
-set hlsearch                    " Highlight search matches.
 set incsearch                   " Incremental search.
 set ignorecase
 set smartcase

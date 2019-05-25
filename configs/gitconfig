@@ -15,7 +15,7 @@
 	sh = show --pretty=format:'%Cred%h %Cgreen%an %Creset%s' --name-status
 	st = status
 [core]
-	editor = nvim
+	editor = vim
 	excludesfile = /Users/utatti/.gitignore_global
 [filter "media"]
 	clean = git-media-clean %f

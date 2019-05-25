@@ -4,7 +4,6 @@ path+=$HOME/.dotfiles/scripts
 # aliases
 alias git='hub'
 alias tmux-reload='tmux source-file ~/.tmux.conf'
-alias vim='nvim'
 
 # tmux
 tm() {
@@ -15,7 +14,7 @@ tm() {
 }
 
 # exports
-export EDITOR='nvim'
+export EDITOR='vim'
 export TERM='xterm-256color'
 export LESS='-R'
 

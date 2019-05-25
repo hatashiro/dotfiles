@@ -1,10 +1,6 @@
-" EasyMotion
-nmap s <ESC>
-nmap n <ESC>
-
 " Multiple Indent
-vmap >> >><ESC>gv
-vmap << <<<ESC>gv
+vmap <Tab> >><ESC>gv
+vmap <S-Tab> <<<ESC>gv
 
 " Disable some useless functions.
 " * Shift-Arrow actions
