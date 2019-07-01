@@ -63,6 +63,21 @@ source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 unsetopt correct
 unsetopt correct_all
 
+# Conda
+conda_path=/anaconda3
+__conda_setup="$(CONDA_REPORT_ERRORS=false "$conda_path/bin/conda" shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+  \eval "$__conda_setup"
+else
+  if [ -f "$conda_path/etc/profile.d/conda.sh" ]; then
+    . "$conda_path/etc/profile.d/conda.sh"
+    CONDA_CHANGEPS1=false conda activate base
+  else
+    \export PATH="$conda_path/bin:$PATH"
+  fi
+fi
+unset __conda_setup
+
 # theme: sindresorhus/pure
 autoload -U promptinit; promptinit
 prompt pure
