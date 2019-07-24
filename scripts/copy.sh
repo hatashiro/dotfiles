@@ -33,18 +33,28 @@ b64enc() {
 # Send the OSC 52 sequence to copy the content.
 # Usage: [string]
 copy() {
-  local str
-  if [ $# -eq 0 ]; then
-    str="$(b64enc)"
+  if [ ! -z "$VTE_VERSION" ]; then
+    # Gnome Terminal (VTE) doesn't support OSC 52, just use xclip
+    if [ $# -eq 0 ]; then
+      xclip -selection clipboard
+    else
+      echo "$@" | xclip -selection clipboard
+    fi
   else
-    str="$(echo "$@" | b64enc)"
-  fi
-  local len=${#str}
-  if [ ${len} -lt ${OSC_52_MAX_SEQUENCE} ]; then
-    print_seq "$(printf '\033]52;c;%s\a' "${str}")"
-  else
-    die "selection too long to send to terminal:" \
-      "${OSC_52_MAX_SEQUENCE} limit, ${len} attempted"
+    local str
+    if [ $# -eq 0 ]; then
+      str="$(b64enc)"
+    else
+      str="$(echo "$@" | b64enc)"
+    fi
+
+    local len=${#str}
+    if [ ${len} -lt ${OSC_52_MAX_SEQUENCE} ]; then
+      print_seq "$(printf '\033]52;c;%s\a' "${str}")"
+    else
+      die "selection too long to send to terminal:" \
+        "${OSC_52_MAX_SEQUENCE} limit, ${len} attempted"
+    fi
   fi
 }
 # Write tool usage and exit.
