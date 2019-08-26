@@ -2,8 +2,8 @@
 	ui = true
 	diff = true
 [user]
-	email = me@noraesae.net
-	name = Hyunje Jun
+	email = noraesae+dev@gmail.com
+	name = Hyunjae Jun
 [alias]
 	l = log --pretty=format:'%Cred%h %Cgreen%an %Creset%s' --name-status
 	lg = log --decorate=short
