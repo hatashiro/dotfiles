@@ -1,12 +1,9 @@
+BazelBuild.vscode-bazel
+DevonDCarew.bazel-code
 EditorConfig.EditorConfig
-Unity.unity-debug
-freebroccolo.reasonml
-ms-python.anaconda-extension-pack
-ms-python.python
-ms-vscode.csharp
+ms-vscode.cpptools
 octref.vetur
-redhat.vscode-yaml
+phgn.vscode-starlark
 shardulm94.trailing-spaces
-teabyii.ayu
 vscode-icons-team.vscode-icons
 vscodevim.vim
