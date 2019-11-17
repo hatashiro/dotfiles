@@ -12,5 +12,8 @@
     "terminal.integrated.showExitAlert": false,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.editor.enablePreview": false,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    }
 }
