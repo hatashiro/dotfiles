@@ -78,6 +78,5 @@ else
 fi
 unset __conda_setup
 
-# theme: sindresorhus/pure
-autoload -U promptinit; promptinit
-prompt pure
+# Prompt
+PROMPT="%F{8}%2~%f %F{%(?.blue.yellow)}❯%f "
