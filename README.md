@@ -25,7 +25,7 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git \
 
 ### Fonts
 
-[Inconsolata](https://github.com/googlefonts/Inconsolata)
+[Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 
 ### Node
 
