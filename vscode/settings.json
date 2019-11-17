@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Inconsolata, Menlo, Monaco, 'Courier New', monospace",
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [80],
@@ -12,5 +12,6 @@
     "terminal.integrated.showExitAlert": false,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.editor.enablePreview": false,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 13
 }
