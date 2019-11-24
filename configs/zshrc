@@ -3,15 +3,6 @@ path+=$HOME/.dotfiles/scripts
 
 # aliases
 alias git='hub'
-alias tmux-reload='tmux source-file ~/.tmux.conf'
-
-# tmux
-tm() {
-  tmux-status
-  if (( $? == 0 )); then
-    tmux
-  fi
-}
 
 # exports
 export EDITOR='vim'
