@@ -22,9 +22,7 @@ path+=./node_modules/.bin
 path+=$HOME/.cargo/bin
 
 # Go settings
-export GOROOT=$HOME/Works/env/go
-export GOPATH=$HOME/Works/go
-path+=$GOROOT/bin
+export GOPATH=$HOME/Works/gopath
 path+=$GOPATH/bin
 
 # lang
