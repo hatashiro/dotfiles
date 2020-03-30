@@ -3,8 +3,6 @@
 " ========================================
 Plug 'kien/ctrlp.vim'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'Shougo/context_filetype.vim'
-Plug 'osyo-manga/vim-precious'
 Plug 'editorconfig/editorconfig-vim'
 
 " ========================================
