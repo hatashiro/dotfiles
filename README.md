@@ -23,10 +23,6 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git \
   "${ZDOTDIR:-$HOME}/.zprezto"
 ```
 
-### Fonts
-
-[Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
-
 ### Node
 
 Install [NVM](https://github.com/nvm-sh/nvm) and the latest
