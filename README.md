@@ -23,11 +23,6 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git \
   "${ZDOTDIR:-$HOME}/.zprezto"
 ```
 
-### Node
-
-Install [NVM](https://github.com/nvm-sh/nvm) and the latest
-[Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/).
-
 ## How to use
 
 ```bash
