@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log $1

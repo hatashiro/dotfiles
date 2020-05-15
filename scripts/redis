@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-current_dir=$PWD
-cd ~/Works/temp
-redis-server
-cd $PWD
