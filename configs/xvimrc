@@ -12,3 +12,7 @@ inoremap <S-Up> <Up>
 inoremap <S-Down> <Down>
 inoremap <S-Left> <Left>
 inoremap <S-Right> <Right>
+
+" Smart-cased search
+set ignorecase
+set smartcase
