@@ -3,7 +3,7 @@
 	diff = true
 [user]
 	email = noraesae+dev@gmail.com
-	name = Hyunjae Jun
+	name = Jun
 [alias]
 	l = log --pretty=format:'%Cred%h %Cgreen%an %Creset%s' --name-status
 	lg = log --decorate=short
