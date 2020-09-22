@@ -4,24 +4,16 @@ A complete dev environment of [@utatti](https://github.com/utatti)
 
 ## Prerequisites
 
-### Zsh packages
+### Zsh
 
-Install with [Homebrew](https://brew.sh/) or other package managers.
-
-```txt
-zsh
-zsh-autosuggestions
-zsh-completions
-zsh-history-substring-search
-zsh-syntax-highlighting
-```
-
-Install Prezto.
+Install Zsh and Prezto.
 
 ```bash
 git clone --recursive https://github.com/sorin-ionescu/prezto.git \
   "${ZDOTDIR:-$HOME}/.zprezto"
 ```
+
+Prezto will install required Zsh packages as its submodules.
 
 ## How to use
 
@@ -31,6 +23,9 @@ cd .dotfiles
 
 # Set `zsh` as the default shell in macOS.
 ./zsh.sh
+
+# Or set the default shell manually (no sudo).
+chsh
 
 # Install configs.
 ./install.sh
