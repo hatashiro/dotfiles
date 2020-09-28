@@ -52,3 +52,6 @@ unsetopt correct_all
 
 # Prompt
 PROMPT="%F{8}%2~%f %F{%(?.blue.yellow)}❯%f "
+
+# Conda
+eval "$('/Users/utatti/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
