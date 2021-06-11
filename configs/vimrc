@@ -1,11 +1,114 @@
+" ============================================
+" Plugins
+" ============================================
 call plug#begin('~/.vim/plugged')
-source ~/.vim/package.vim
+Plug 'editorconfig/editorconfig-vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
+" ============================================
+" Syntax on
+" ============================================
 filetype plugin indent on
 syntax on
 
-source ~/.vim/default.vim
-source ~/.vim/setting.vim
-source ~/.vim/command.vim
-source ~/.vim/key.vim
+" ============================================
+" Default settings
+" ============================================
+" Allow backspacing over everything in insert mode.
+set backspace=indent,eol,start
+set encoding=utf-8
+" Add cp949 to the character encodings for the files written in the windows.
+set fencs=ucs-bom,utf-8,cp949
+" Show ^M for a carraige return.
+set fileformats=unix
+" Number of lines of command line history.
+set history=100
+" Incremental search.
+set incsearch
+set ignorecase
+set smartcase
+set nobackup
+set nowritebackup
+set swapfile
+set dir=/tmp
+set noerrorbells
+" Do not jump to first character with page commands,
+set nostartofline
+set number
+set ruler
+" Keep a context when scrolling.
+set scrolloff=5
+set showcmd
+" Show matching brackets.
+set showmatch
+set showmode
+" Extend maximum of tab page to 50 (default 10).
+set tabpagemax=50
+" http://stackoverflow.com/a/5019111
+set tags=tags;/
+set nowrap
+set textwidth=0
+set undolevels=200
+" Read/write a .viminfo file, don't store more than 50 lines of registers.
+set viminfo='20,\"50
+set wildmode=list:longest
+set wildchar=<TAB>
+set laststatus=0
+set nocursorline
+set colorcolumn=80
+set expandtab
+set smarttab
+set autoindent
+set smartindent
+set ttimeout
+set ttimeoutlen=0
+set matchtime=0
+
+" ============================================
+" Show trailing spaces
+" ============================================
+set list
+set listchars=""                  " Reset the listchars
+set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:.            " show trailing spaces as dots
+set listchars+=extends:>
+set listchars+=precedes:<
+
+" ============================================
+" Utility functions
+" ============================================
+function! SetIndent(size)
+  let &ts=a:size
+  let &sw=a:size
+  let &sts=a:size
+endfunction
+call SetIndent(2)
+command! -nargs=1 Ts call SetIndent(<f-args>)
+
+" ============================================
+" Language-specific settings
+" ============================================
+" vue
+autocmd BufNewFile,BufRead *.vue set filetype=html
+
+" ============================================
+" Custom commands
+" ============================================
+command W w
+command WQ wq
+command Wq wq
+command Q q
+
+" ============================================
+" Key mappings
+" ============================================
+" Multiple Indent
+vmap <Tab> >><ESC>gv
+vmap <S-Tab> <<<ESC>gv
+
+" Disable shift+navigation in visual mode.
+vnoremap <S-k> <NOP>
+vnoremap <S-j> <NOP>
+vnoremap <S-h> <NOP>
+vnoremap <S-l> <NOP>
