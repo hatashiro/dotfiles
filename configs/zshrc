@@ -20,6 +20,9 @@ path+=$HOME/.local/bin
 path+=./node_modules/.bin
 path+=$HOME/.cargo/bin
 
+# Git settings
+git config --global core.excludesfile $HOME/.gitignore_global
+
 # Go settings
 export GOPATH=$HOME/Works/gopath
 path+=$GOPATH/bin
@@ -55,4 +58,4 @@ unsetopt correct_all
 PROMPT="%F{8}%2~%f %F{%(?.blue.yellow)}❯%f "
 
 # Conda
-eval "$('/Users/utatti/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+eval "$("$HOME/miniconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"

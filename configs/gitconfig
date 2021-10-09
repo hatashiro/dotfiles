@@ -16,7 +16,6 @@
 	st = status
 [core]
 	editor = vim
-	excludesfile = /Users/utatti/.gitignore_global
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
