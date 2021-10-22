@@ -20,9 +20,6 @@ path+=$HOME/.local/bin
 path+=./node_modules/.bin
 path+=$HOME/.cargo/bin
 
-# Git settings
-git config --global core.excludesfile $HOME/.gitignore_global
-
 # Go settings
 export GOPATH=$HOME/Works/gopath
 path+=$GOPATH/bin
