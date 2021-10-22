@@ -24,7 +24,7 @@ done
 find -L $HOME -maxdepth 1 -type l | xargs rm
 
 # Set default command-line settings
-if [[ $OSTYPE == 'darwin'* ]];
+if [[ $OSTYPE == 'darwin'* ]]; then
   defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 fi
 
