@@ -27,6 +27,3 @@ find -L $HOME -maxdepth 1 -type l | xargs rm
 if [[ $OSTYPE == 'darwin'* ]]; then
   defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 fi
-
-# Set global gitignore
-git config --global core.excludesfile ~/.gitignore_global
