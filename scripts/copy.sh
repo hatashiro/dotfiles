@@ -23,7 +23,7 @@ b64enc() {
 }
 
 main() {
-  if [ ! -z "$VTE_VERSION" ]; then
+  if [ -x "$(command -v xclip)" ]; then
     # Gnome Terminal (VTE) doesn't support OSC 52, just use xclip.
     if [ $# -eq 0 ]; then
       xclip -selection clipboard
