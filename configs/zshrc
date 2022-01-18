@@ -56,3 +56,11 @@ PROMPT="%F{8}%2~%f %F{%(?.blue.yellow)}❯%f "
 
 # Conda
 eval "$("$HOME/miniconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
+
+# Cuda
+CUDA=/usr/local/cuda
+if [ -d "$CUDA" ];
+then
+  path+=$CUDA/bin
+  export LD_LIBRARY_PATH=$CUDA/lib64:$LD_LIBRARY_PATH
+fi
