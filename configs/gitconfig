@@ -21,3 +21,5 @@
 	smudge = git-media-smudge %f
 [init]
 	defaultBranch = main
+[credential]
+	helper = cache
