@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+main() {
+  if [ -x "$(command -v open)" ] && [ "$0" != "$(command -v open)" ]; then
+    open "$@"
+  elif [ -x "$(command -v xdg-open)" ]; then
+    xdg-open "$@" &> /dev/null
+  else
+    echo "No open nor xdg-open supported."
+  fi
+}
+
+main "$@"
