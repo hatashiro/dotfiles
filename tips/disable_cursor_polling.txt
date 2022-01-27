@@ -1,0 +1,6 @@
+In sudo (sudo su - ), run the following:
+
+  echo N> /sys/module/drm_kms_helper/parameters/poll
+  echo "options drm_kms_helper poll=N" >> /etc/modprobe.d/local.conf
+  echo 'drm_kms_helper' >> /etc/modules-load.d/local.conf
+  modprobe drm_kms_helper
