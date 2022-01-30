@@ -47,6 +47,9 @@ export NVM_DIR="$HOME/.nvm"
 # zpresto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
+# zsh-syntax-highlighting
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern line root)
+
 # disable auto correction
 unsetopt correct
 unsetopt correct_all
