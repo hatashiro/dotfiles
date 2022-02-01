@@ -61,7 +61,7 @@ PROMPT="%F{8}%2~%f %F{%(?.blue.yellow)}❯%f "
 eval "$("$HOME/miniconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
 
 # Cuda
-CUDA=/usr/local/cuda
+CUDA=/usr/local/cuda-11.6
 if [ -d "$CUDA" ];
 then
   path+=$CUDA/bin
