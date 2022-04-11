@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# Options
+output="out.mp4"
+
+# Inputs
+inputs=()
+
+# Constants
+USAGE="usage: $(basename "$0") [options] <input>...
+
+options:
+  -h, --help               Print the help text.
+  -o, --output <output>    Specify the output path. (default: ${output})
+"
+
+TEMP_LIST_FILE=/tmp/gopro_chapter_concat_list.txt
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -h|--help)
+      echo "${USAGE}"
+      exit
+      ;;
+    -o|--output)
+      output="$2"
+      shift; shift
+      ;;
+    -o=*|--output=*)
+      output="${1#*=}"
+      shift
+      ;;
+    *)
+      # It should be an input.
+      inputs+=("$1")
+      shift
+      ;;
+  esac
+done
+
+# Creates a temporary list file for FFmpeg.
+echo -n > ${TEMP_LIST_FILE}
+for input in ${inputs[@]}; do
+  echo "file '${PWD}/${input}'" >> ${TEMP_LIST_FILE}
+done
+
+# Run FFmpeg concat.
+ffmpeg -safe 0 -f concat -i ${TEMP_LIST_FILE} -c copy \
+  -map 0:v -map 0:a -map 0:3 -copy_unknown -tag:2 gpmd ${output}
