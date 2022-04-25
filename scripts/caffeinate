@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Disable screen blackout and screen lock.
+gsettings set org.gnome.desktop.session idle-delay 0
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+
+# Wait for Ctrl-C
+( trap exit SIGINT; read -r -d '' _ </dev/tty )
+
+# Re-enable screen blackout and screen lock.
+gsettings set org.gnome.desktop.session idle-delay 300
+gsettings set org.gnome.desktop.screensaver lock-enabled true
