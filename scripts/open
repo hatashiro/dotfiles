@@ -5,6 +5,8 @@ main() {
     open "$@"
   elif [ -x "$(command -v xdg-open)" ]; then
     xdg-open "$@" &> /dev/null
+  elif [ -x "$(command -v powershell.exe)" ]; then
+    powershell.exe -c "$@"
   else
     echo "No open nor xdg-open supported."
   fi
