@@ -2,7 +2,7 @@
 	ui = true
 	diff = true
 [user]
-	email = noraesae+dev@gmail.com
+	email = hjun2048+dev@gmail.com
 	name = Jun
 [alias]
 	l = log --pretty=format:'%Cred%h %Cgreen%an %Creset%s' --name-status
