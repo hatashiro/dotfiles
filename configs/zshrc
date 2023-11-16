@@ -24,6 +24,10 @@ path+=$HOME/.cargo/bin
 export GOPATH=$HOME/Works/gopath
 path+=$GOPATH/bin
 
+# Flutter
+FLUTTER_PATH=$HOME/Works/env/flutter/bin
+path+=$FLUTTER_PATH
+
 # lang
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
