@@ -1,4 +1,9 @@
 xrdb ~/.Xresources
 xmodmap ~/.Xmodmap
 
+export GTK_IM_MODULE=DEFAULT=fcitx
+export QT_IM_MODULE=DEFAULT=fcitx
+export XMODIFIERS=DEFAULT=@im=fcitx
+fcitx5 &
+
 exec i3
