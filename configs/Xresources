@@ -1,6 +1,7 @@
 Xft.dpi: 144
 URxvt*termName: rxvt-unicode-256color
 URxvt*font: xft:SourceCodePro:size=10
+URxvt.perl-ext-common: -confirm-paste
 
 ! Colors
 *background:  [97]#282a36
