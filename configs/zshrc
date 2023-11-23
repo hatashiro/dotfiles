@@ -47,6 +47,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # zpresto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -70,4 +71,11 @@ if [ -d "$CUDA" ];
 then
   path+=$CUDA/bin
   export LD_LIBRARY_PATH=$CUDA/lib64:$LD_LIBRARY_PATH
+fi
+
+# Google Cloud SDK.
+if [ -f '/home/hatashiro/Works/env/gcloud/google-cloud-sdk/path.zsh.inc' ];
+then
+  . '/home/hatashiro/Works/env/gcloud/google-cloud-sdk/path.zsh.inc'
+  . '/home/hatashiro/Works/env/gcloud/google-cloud-sdk/completion.zsh.inc';
 fi
