@@ -197,3 +197,6 @@ bar {
 exec --no-startup-id command -v fcitx5 &> /dev/null && fcitx5 &
 exec --no-startup-id command -v ibus-daemon &> /dev/null && ibus-daemon --xim -d -r
 exec --no-startup-id command -v libinput-gestures-setup &> /dev/null && libinput-gestures-setup start
+
+# Flameshot
+bindsym $mod+Shift+s exec "flameshot gui"
