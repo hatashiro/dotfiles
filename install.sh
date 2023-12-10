@@ -20,10 +20,6 @@ do
   ln -s $path ~/.$filename
 done
 
-# i3
-rm -rf ~/.config/i3
-ln -s $PWD/i3 ~/.config/i3
-
 # Remove dangling symlinks in $HOME
 find -L $HOME -maxdepth 1 -type l | xargs rm
 
