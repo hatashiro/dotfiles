@@ -6,6 +6,6 @@ shopt -s nocaseglob
 for f in *.mts; do
   if [ -f $f ]; then
     out="${f%.*}.mp4"
-    ffmpeg -i $f $out
+    ffmpeg -i $f -c copy $out
   fi
 done
