@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Make glob case-insensitive.
+shopt -s nocaseglob
+
+for f in *.mts; do
+  if [ -f $f ]; then
+    out="${f%.*}.mp4"
+    ffmpeg -i $f $out
+  fi
+done
