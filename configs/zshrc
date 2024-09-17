@@ -76,10 +76,3 @@ then
   path+=$CUDA/bin
   export LD_LIBRARY_PATH=$CUDA/lib64:$LD_LIBRARY_PATH
 fi
-
-# Google Cloud SDK.
-if [ -f '/home/hatashiro/Works/env/gcloud/google-cloud-sdk/path.zsh.inc' ];
-then
-  . '/home/hatashiro/Works/env/gcloud/google-cloud-sdk/path.zsh.inc'
-  . '/home/hatashiro/Works/env/gcloud/google-cloud-sdk/completion.zsh.inc';
-fi
