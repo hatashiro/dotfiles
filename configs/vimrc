@@ -89,8 +89,12 @@ command! -nargs=1 Ts call SetIndent(<f-args>)
 " ============================================
 " Language-specific settings
 " ============================================
+
 " vue
 autocmd BufNewFile,BufRead *.vue set filetype=html
+
+" go
+autocmd BufNewFile,BufRead *.go set noexpandtab
 
 " ============================================
 " Custom commands
