@@ -18,7 +18,23 @@ if command_exists snap; then
   sudo snap refresh
 fi
 
-# Check if a reboot is required.
+# Upgrade Pacman packages.
+if command_exists pacman; then
+  sudo pacman -Syu
+fi
+
+# Upgrade AUR packages.
+if command_exists yay; then
+  yay -Syu
+fi
+
+# Upgrade device firmware using fwupd.
+if command_exists fwupdmgr; then
+  sudo fwupdmgr refresh || true
+  sudo fwupdmgr update
+fi
+
+# Check if a reboot is required (Debian only).
 if [ -f /var/run/reboot-required ]; then
   echo -n "Reboot required. Want to reboot now? [y/N] "
   read should_reboot
