@@ -1,10 +1,9 @@
 No package is needed. Update the following config.
 
-/etc/X11/xorg.conf.d/00-keyboard.conf:
-
+# /etc/X11/xorg.conf.d/00-keyboard.conf
 Section "InputClass"
-Identifier "system-keyboard"
-Option "XkbOptions" "ctrl:nocaps"
+  Identifier "system-keyboard"
+  Option "XkbOptions" "ctrl:nocaps"
 EndSection
 
 

@@ -1,23 +1,22 @@
 Use touchegg. Update the config like below (backup the original). A caveat is
 that it seems updating config requires a reboot.
 
-/usr/share/touchegg/touchegg.conf:
+# /usr/share/touchegg/touchegg.conf
+<application name="All">
+  <gesture type="SWIPE" fingers="3" direction="LEFT">
+    <action type="SEND_KEYS">
+      <modifiers>Alt_R</modifiers>
+      <keys>KP_Left</keys>
+    </action>
+  </gesture>
 
-  <application name="All">
-    <gesture type="SWIPE" fingers="3" direction="LEFT">
-      <action type="SEND_KEYS">
-        <modifiers>Alt_R</modifiers>
-        <keys>KP_Left</keys>
-      </action>
-    </gesture>
-
-    <gesture type="SWIPE" fingers="3" direction="RIGHT">
-      <action type="SEND_KEYS">
-        <modifiers>Alt_R</modifiers>
-        <keys>KP_Right</keys>
-      </action>
-    </gesture>
-  </application>
+  <gesture type="SWIPE" fingers="3" direction="RIGHT">
+    <action type="SEND_KEYS">
+      <modifiers>Alt_R</modifiers>
+      <keys>KP_Right</keys>
+    </action>
+  </gesture>
+</application>
 
 
 An alternative is libinput-gestures, but it sometimes stops working, e.g. after
