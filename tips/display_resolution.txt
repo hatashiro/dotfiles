@@ -1,0 +1,49 @@
+Check-ups
+---------
+
+First check the active monitors by `xrandr --listactivemonitors`.
+
+  $ xrandr --listactivemonitors
+  Monitors: 1
+   0: +eDP1 1624/210x1080/140+0+0  eDP1
+
+You can list available resolutions by `xrandr --display`.
+
+  $ xrandr --display :0
+  Screen 0: minimum 8 x 8, current 1624 x 1080, maximum 32767 x 32767
+  eDP1 connected ...
+   1624x1080_60.00  59.92*+
+   1800x1200     59.90 +  47.91
+   1680x1050     59.88
+   ...
+
+If a preferred resolution is not listed, run `cvt` to get the modeline for the
+resolution.
+
+  $ cvt 1440 960
+  # 1440x960 59.98 Hz (CVT) hsync: 59.74 kHz; pclk: 113.75 MHz
+  Modeline "1440x960_60.00"  113.75 ... 996 -hsync +vsync
+
+
+Set in xorg.conf
+----------------
+
+Setting xorg.conf works consistently, e.g. in lightdm or after reboot.
+
+# /etc/X11/xorg.conf.d/10-monitor.conf
+Section "Monitor"
+  Identifier "eDP1"
+  Modeline "1440x960_60.00"  113.75 ... 996 -hsync +vsync
+  Option "PreferredMode" "1440x960_60.00"
+EndSection
+
+
+Set via xrandr
+--------------
+
+This method adds the resolution temporarily. It's usually reset after reboot.
+
+  $ xrandr --newmode "1440x960_60.00"  113.75 ... 996 -hsync +vsync
+  $ xrandr --addmode eDP1 "1440x960_60.00"
+
+The new resolution mode will appear in the display setting.
