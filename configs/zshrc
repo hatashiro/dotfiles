@@ -18,11 +18,14 @@ path=('$HOME/.pyenv/shims' $path)
 path+=$HOME/bin
 path+=$HOME/.local/bin
 path+=./node_modules/.bin
-path+=$HOME/.cargo/bin
 
 # Go settings
 export GOPATH=$HOME/Works/gopath
 path+=$GOPATH/bin
+
+# Rust
+CARGO_DIR="$HOME/.cargo/"
+[ -s "$CARGO_DIR/env" ] && \. "$CARGO_DIR/env"
 
 # Flutter
 FLUTTER_PATH=$HOME/Works/env/flutter/bin
