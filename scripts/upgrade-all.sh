@@ -21,13 +21,13 @@ fi
 # Upgrade Pacman packages.
 if command_exists pacman; then
   sudo pacman -Syu
-  sudo pacman -Sc
+  sudo pacman -Sc --noconfirm
 fi
 
 # Upgrade AUR packages.
 if command_exists yay; then
   yay -Syu
-  yay -Sc
+  yay -Sc --noconfirm
 fi
 
 # Upgrade device firmware using fwupd.
