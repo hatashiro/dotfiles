@@ -13,6 +13,7 @@ export LESS='-R'
 # path prepend
 path=('/usr/local/bin' $path)
 path=('$HOME/.pyenv/shims' $path)
+path=('/opt/homebrew/bin' $path)  # macOS Homebrew.
 
 # path append
 path+=$HOME/bin
