@@ -87,3 +87,6 @@ then
   path+=$CUDA/bin
   export LD_LIBRARY_PATH=$CUDA/lib64:$LD_LIBRARY_PATH
 fi
+
+# Antigravity
+path+=$HOME/.antigravity/antigravity/bin
