@@ -27,7 +27,7 @@ cd .dotfiles
 # Or set the default shell manually (no sudo).
 chsh
 
-# Install configs.
+# Install all.
 ./install.sh
 ```
 

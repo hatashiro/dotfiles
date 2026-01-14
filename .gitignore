@@ -1,9 +1,9 @@
 .DS_Store
-/old
-/configs/vim/plugged/*
+/backup
+/dotfiles/vim/plugged/*
 .netrwhist
-/configs/config/**/*
-/configs/emacs.d/elpa
-/configs/emacs.d/auto-save-list
-/configs/emacs.d/projectile-bookmarks.eld
-/configs/emacs.d/projectile.cache
+/dotfiles/config/**/*
+/dotfiles/emacs.d/elpa
+/dotfiles/emacs.d/auto-save-list
+/dotfiles/emacs.d/projectile-bookmarks.eld
+/dotfiles/emacs.d/projectile.cache

@@ -1,23 +1,40 @@
 #!/usr/bin/env bash
 
-# Make directory for old files
-if [ ! -d "$PWD/old" ]; then
-  mkdir old
-else
-  mv old older
-  mkdir old
-  mv older old/
-fi
+root_dir=$(realpath $(dirname $0))
+dotfiles_dir="$root_dir/dotfiles"
+backup_dir="$root_dir/backup"
 
-# Link dotfiles
-for f in `find configs -maxdepth 1`
-do
-  filename=$(basename $f)
-  path=$PWD/$f
+# Helper function for backup.
+function backup {
+  dest_path=$1
+  backup_link_path="${backup_dir}/$2"
+  backup_file_path="${backup_link_path}_$(date +"%Y%m%d%H%M%S")"
 
-  mv $HOME/.$filename ./old/
+  mkdir -p $(dirname $backup_link_path)
 
-  ln -s $path ~/.$filename
+  # Back up only if it's different from current backup.
+  if ! diff $dest_path $backup_link_path &> /dev/null; then
+    mv $dest_path $backup_file_path
+    ln -sf $(basename $backup_file_path) $backup_link_path
+  fi
+}
+
+# Install dotfiles.
+for filename in $(ls $dotfiles_dir); do
+  orig_path="${dotfiles_dir}/${filename}"
+  dest_path="${HOME}/.${filename}"
+
+  # If already installed, skip.
+  if [ -L $dest_path ] && [ $(readlink $dest_path) = $orig_path ]; then
+    continue
+  fi
+
+  # Back up any existing file or directory.
+  if [ -f $dest_path ] || [ -d $dest_path ]; then
+    backup $dest_path "dotfiles/${filename}"
+  fi
+
+  ln -sf $orig_path $dest_path
 done
 
 # Remove dangling symlinks in $HOME
