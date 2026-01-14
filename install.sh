@@ -2,6 +2,7 @@
 
 root_dir=$(realpath $(dirname $0))
 dotfiles_dir="$root_dir/dotfiles"
+configs_dir="$root_dir/configs"
 backup_dir="$root_dir/backup"
 
 # Helper function for backup.
@@ -35,6 +36,34 @@ for filename in $(ls $dotfiles_dir); do
   fi
 
   ln -sf $orig_path $dest_path
+done
+
+# Install configs.
+for config in $(ls $configs_dir); do
+  config_dir="${configs_dir}/${config}"
+
+  # If it's not a directory, skip.
+  if [ ! -d $config_dir ]; then
+    continue
+  fi
+
+  for filename in $(ls $config_dir); do
+    orig_path="${config_dir}/${filename}"
+    dest_path="${HOME}/.config/${config}/${filename}"
+
+    # If already installed, skip.
+    if [ -L $dest_path ] && [ $(readlink $dest_path) = $orig_path ]; then
+      continue
+    fi
+
+    # Back up any existing file or directory.
+    if [ -f $dest_path ] || [ -d $dest_path ]; then
+      backup $dest_path "configs/${config}/${filename}"
+    fi
+
+    mkdir -p $(dirname $dest_path)
+    ln -sf $orig_path $dest_path
+  done
 done
 
 # Remove dangling symlinks in $HOME
