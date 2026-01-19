@@ -4,3 +4,4 @@ email = "hjun2048+dev@gmail.com"
 
 [aliases]
 lg = ["log"]
+sq = ["squash"]
