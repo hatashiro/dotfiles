@@ -1,7 +1,5 @@
 # dotfiles
 
-A complete dev environment of [@utatti](https://github.com/utatti)
-
 ## Prerequisites
 
 ### Zsh
