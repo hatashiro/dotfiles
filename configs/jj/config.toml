@@ -3,5 +3,17 @@ name = "Jun"
 email = "hjun2048+dev@gmail.com"
 
 [aliases]
+- = ["util", "exec", "--", "bash", "-c", "jj $@ -r @-", ""]
+ab = ["abandon"]
+bm = ["bookmark"]
+cm = ["commit"]
+df = ["diff"]
+ds = ["describe"]
+ed = ["edit"]
 lg = ["log"]
+nw = ["new"]
+rb = ["rebase"]
+rs = ["restore"]
+rv = ["revert"]
+sh = ["show"]
 sq = ["squash"]
